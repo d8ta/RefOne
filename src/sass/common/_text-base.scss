@@ -19,23 +19,38 @@ h6,
 
 
 %h1 {
-    
+    font: $font-klavika;
+    line-height: 1.2em;
+    font-weight: normal;
+    text-transform: uppercase;
+    display: none;
+    @include mq($from: screen-sm) {
+        font-size: em(28);
+        display: inline;
+    }
+    @include mq($from: screen-md) {
+        font-size: em(32);
+        display: inline;
+    }
+    @include mq($from: screen-lg) {
+        font-size: em(38);
+    }
+    @include mq($from: $screen-lg + 200px) {
+        font-size: em(46);
+    }
+    @include mq($from: screen-xxl) {
+        font-size: em(48);
+    }
 }
 
-%h2 {
-    
-}
+%h2 {}
 
-%h3 {
-    
-}
+%h3 {}
 
-%h4 {
-    
-}
+%h4 {}
 
 %h5 {
-   font-size: 1;
+    font-size: 1;
 }
 
 %h6 {
