@@ -1,0 +1,19 @@
+$block: '.site-navigation';
+#{$block} {
+    ul li {
+        margin: 0;
+        padding-left: 1em;
+        padding-bottom: 3em;
+        margin-top: -2em;
+
+        float: right;
+        text-transform: uppercase;
+        font: em(16) $font-normal;
+        font-weight: 400;
+        @include clearfix;
+    }
+    margin-top: 2.75em;
+    @include mq($until: width-mobile-menu) {
+        display: none;
+    }
+}
