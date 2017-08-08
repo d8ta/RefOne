@@ -1,9 +1,7 @@
 $block: '.welcome-slider';
 #{$block} {
-	&__slide {
-		&__image {
-			padding-bottom: 20px;
-			background: yellow;
-		}
-	}
+    &__img {
+        height: auto;
+        width: 100%;
+    }
 }
