@@ -2,9 +2,9 @@
 	$boxes = $block->getBox();
 ?>
 
-<div class="section">
-	<div class="section__content section--margin">
-		<div class="details">
+<div class="section-details">
+	<div class="section__content">
+		<div class="details section--margin">
 			@foreach ($boxes as $box)
 				<?php
 					$icon = $box['icon'];

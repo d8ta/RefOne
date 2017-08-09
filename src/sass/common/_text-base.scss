@@ -76,11 +76,13 @@ h6,
     color: $brand-primary;
     text-transform: uppercase;
     max-width: 7.5em;
+    margin: 0 auto;
+    text-align: left;
 }
 
 %text-box {
     @extend %text-base;
     font-size: em(18);
-    text-align: center;
+    margin: 0 auto;
     max-width: 15.6em;
 }

@@ -5,6 +5,11 @@ $block: '.details';
 		width: 32%;
 		height: auto;
 		vertical-align: top;
+		text-align: center;
+		margin-top: 2em;
+	}
+	&__icon {
+		margin: 0 auto;
 	}
 }
 
