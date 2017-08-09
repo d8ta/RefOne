@@ -3,6 +3,10 @@
     @extend %h1 !optional;
 }
 
+.h1-welcome {
+	@extend %h1-welcome !optional;
+}
+
 .h2 {
     @extend %h2 !optional;
 }
@@ -21,4 +25,8 @@
 
 .h6 {
     @extend %h6 !optional;
+}
+
+.text-base {
+	@extend %text-base !optional;
 }

@@ -14,7 +14,7 @@ class Welcome extends \A365\Wordpress\Block\AcfBlock {
 	public static function getAcfSubfields()
 	{
 		return [
-				FieldHelper::createImageCrop('background', 'Hintergrund', ["crop_type" => "hard", 'target_size' => 'custom', 'force_crop' => 'no', 'save_format' => 'url', "width" => 1600, "height" => 650])->setRequired(),
+				FieldHelper::createImageCrop('background', 'Hintergrund', ["crop_type" => "hard", 'target_size' => 'custom', 'force_crop' => 'no', 'save_format' => 'url', "width" => 490, "height" => 45])->setRequired(),
 				FieldHelper::createText('firstline', 'erste Textzeile')->setRequired(),
 				FieldHelper::createText('secondline', 'zweite Textzeile')->setRequired(),
 				FieldHelper::createText('thirdline', 'dritte Textzeile')->setRequired(),

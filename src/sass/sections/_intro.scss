@@ -1,0 +1,23 @@
+$block: '.intro';
+#{$block} {
+    margin-top: rem(60);
+    margin-bottom: rem(60);
+    text-align: center;
+    a {
+        display: block;
+        max-width: 23em;
+        margin: 0 auto;
+        margin-top: em(30);
+    }
+    &__logos {
+        display: none;
+    }
+    &__text {
+        margin: 0 auto;
+    }
+    @include mq($from: screen-sm) {
+        &__logos {
+            display: inline;
+        }
+    }
+}

@@ -1,0 +1,11 @@
+$block: '.btn';
+#{$block} {
+   color: $color-white;
+   background: $brand-primary;
+   font-family: $font-normal;
+   font-size: em(24);
+   font-weight: bold;
+   text-transform: uppercase;
+   border-radius: .25em;
+   padding: em(15);
+}
