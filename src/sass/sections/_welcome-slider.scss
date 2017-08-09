@@ -7,13 +7,14 @@ $block: '.welcome-slider';
     }
     &__text {
         position: absolute;
-        top: 2.875em;
-        right: 5.375em;
+        top: 1.5em;
+        //(right: 5.375em;
+        right: 0;
         &__first,
         &__second,
         &__third,
         &__forth {
-            background: $opacity-hobexred;
+            background: rgba($hobexRot, 0.6);
             color: $color-white;
             padding: em(2) em(5);
             margin-bottom: em(2);
@@ -21,20 +22,20 @@ $block: '.welcome-slider';
         }
         &__first {
             width: 11.25em;
-            margin-left: 1.75em;
+            //margin-left: 1.75em;
         }
         &__second {
             width: 9.25em;
             text-align: right;
-            margin-left: 3.75em;
+            margin-left: 2em;
         }
         &__third {
             width: 11em;
-            margin-left: 2em;
+            margin-left: .25em;
         }
         &__forth {
             width: 9.3em;
-            margin-left: 3.7em;
+            margin-left: 2em;
         }
     }
 }
