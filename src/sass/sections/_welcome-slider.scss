@@ -1,5 +1,6 @@
 $block: '.welcome-slider';
 #{$block} {
+    position: relative;
     &__img {
         height: auto;
         width: 100%;
