@@ -30,3 +30,11 @@
 .text-base {
 	@extend %text-base !optional;
 }
+
+.headline-box {
+	@extend %headline-box !optional;
+}
+
+.text-box {
+	@extend %text-box !optional;
+}

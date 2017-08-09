@@ -70,3 +70,19 @@ h6,
     padding-top: 2em;
     max-width: 44.75em;
 }
+
+%headline-box {
+    @extend %text-base;
+    color: $brand-primary;
+    text-transform: uppercase;
+    max-width: 7.5em;
+    margin: 0 auto;
+    text-align: left;
+}
+
+%text-box {
+    @extend %text-base;
+    font-size: em(18);
+    margin: 0 auto;
+    max-width: 15.6em;
+}
