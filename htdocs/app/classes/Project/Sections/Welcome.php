@@ -3,9 +3,9 @@ namespace Project\Sections;
 
 use A365\Wordpress\Helpers\Acf\FieldHelper;
 
-class WelcomeSlider extends \A365\Wordpress\Block\AcfBlock {
+class Welcome extends \A365\Wordpress\Block\AcfBlock {
 
-	protected $_template = 'welcome-slider';
+	protected $_template = 'welcome';
 	protected static $_label = 'Grosses Startseiten Bild';
 
 	/**
