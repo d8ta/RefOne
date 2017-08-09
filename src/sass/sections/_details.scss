@@ -1,0 +1,10 @@
+$block: '.details';
+#{$block} {
+	&__box {
+		display: inline-block;
+		width: 32%;
+		height: auto;
+		vertical-align: top;
+	}
+}
+
