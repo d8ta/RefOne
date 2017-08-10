@@ -12,7 +12,7 @@
 					$text = $box['text'];
 				?>
 				<div class="details__box">
-					<img src="{{$icon}}" alt="{{$icon}} Icon" class="details__icon">
+					<img class="details__icon" src="{{$icon}}" alt="{{$icon}} Icon">
 					<h2 class="details__headline headline-box">{{$headline}}</h2>
 					<div class="details__text editor-content text-box">{!!$text!!}</div>
 				</div>
