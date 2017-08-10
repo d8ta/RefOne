@@ -20,6 +20,10 @@ p {
     margin-bottom: 0.8em;
 }
 
+a:hover {
+	color: $color-white;
+}
+
 .section__intro {
     background: #f5f6f6;
 }

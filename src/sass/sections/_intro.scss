@@ -9,11 +9,11 @@ $block: '.intro';
         margin: 0 auto;
         margin-top: em(30);
     }
-    &__logos {
-        display: none;
-    }
     &__text {
         margin: 0 auto;
+    }
+    &__logos {
+        display: none;
     }
     @include mq($from: screen-sm) {
         &__logos {
