@@ -84,6 +84,14 @@ h6,
     text-align: center;
 }
 
+%headline-box-alt {
+    @extend %headline-box;
+    font-size: em(30);
+    color: $color-black;
+    max-width: 6.9em;
+    line-height: 1.2;
+}
+
 %text-box {
     @extend %text-base;
     font-size: em(18);

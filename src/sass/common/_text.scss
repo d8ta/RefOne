@@ -32,7 +32,11 @@
 }
 
 .headline-box {
-	@extend %headline-box !optional;
+    @extend %headline-box !optional;
+}
+
+.headline-box-alt {
+	@extend %headline-box-alt !optional;
 }
 
 .text-box {
