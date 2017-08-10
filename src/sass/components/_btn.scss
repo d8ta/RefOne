@@ -1,5 +1,8 @@
 $block: '.btn';
 #{$block} {
+	&--hidden {
+		display: none;
+	}
     color: $color-white;
     background: $brand-primary;
     font-family: $font-normal;

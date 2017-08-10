@@ -28,6 +28,7 @@ $block: '.products';
 
     @include mq($from: $screen-xs + 100px) {
         &__box {
+            max-width: none;
             width: 48%;
             display: inline-block;
         }
@@ -39,7 +40,7 @@ $block: '.products';
     }
     @include mq($from: $screen-xl - 90px) {
         &__box {
-            width: 32%;
+            width: 24%;
         }
     }
 }

@@ -26,6 +26,11 @@ h6,
     text-align: center;
 }
 
+%h1-dark {
+    @extend %h1;
+    color: $color-white;
+}
+
 %h1-welcome {
     @extend %h1;
     font-weight: normal;
@@ -71,6 +76,10 @@ h6,
     font-weight: bold;
     padding-top: 2em;
     max-width: 46em;
+}
+
+%text-base-dark {
+    color: $color-white;
 }
 
 %headline-box {
