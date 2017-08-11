@@ -55,7 +55,12 @@ h6,
 }
 
 
-%h2 {}
+%h2 {
+    font-family: $font-headline;
+    font-style: italic;
+    text-transform: none;
+    font-size: .85em;
+}
 
 %h3 {}
 
