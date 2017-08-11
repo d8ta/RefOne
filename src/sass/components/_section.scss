@@ -15,10 +15,14 @@ $block: ".section";
     }
     &__content {
         margin: 0 auto;
-        padding-left: $side-padding;
-        padding-right: $side-padding;
+        padding-left: $mobile-padding;
+        padding-right: $mobile-padding;
         box-sizing: content-box;
-        //max-width: $width-max-container;
+        max-width: $width-max-container;
+          @include mq($from: screen-xs) {
+            padding-right: $side-padding;
+            padding-left: $side-padding;
+          }
         @include clearfix;
         &--inner {
             max-width: em($width-max-container-text);

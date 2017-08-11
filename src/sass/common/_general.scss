@@ -21,9 +21,17 @@ p {
 }
 
 a:hover {
-	color: $brand-primary;
+    color: $brand-primary;
 }
 
 .section__intro {
-    background: #f5f6f6;
+    background: $hobexGrey;
+}
+
+.section__darkintro {
+    background: $hobexDark;
+}
+
+.hidden {
+    display: none;
 }

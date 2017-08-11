@@ -3,6 +3,10 @@
     @extend %h1 !optional;
 }
 
+.h1-dark {
+    @extend %h1-dark !optional;
+}
+
 .h1-welcome {
 	@extend %h1-welcome !optional;
 }
@@ -28,11 +32,19 @@
 }
 
 .text-base {
-	@extend %text-base !optional;
+    @extend %text-base !optional;
+}
+
+.text-base-dark {
+	@extend %text-base-dark !optional;
 }
 
 .headline-box {
-	@extend %headline-box !optional;
+    @extend %headline-box !optional;
+}
+
+.headline-box-alt {
+	@extend %headline-box-alt !optional;
 }
 
 .text-box {
