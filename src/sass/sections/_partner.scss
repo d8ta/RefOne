@@ -1,0 +1,22 @@
+$block: '.partner';
+#{$block} {
+    &__inner {
+
+        position: relative;
+        display: inline-block;
+        width: 24%; 
+        float: left;
+        margin: 0px;
+        padding: 0px;
+        border-style: solid;
+        border-color: #e6ebef;
+        border-image: none;
+        border-width: 0px 1px 1px 0px;
+        img {
+            max-width: 150px;
+            max-height: auto;
+        }
+    }
+    &__logos {
+    }
+}
