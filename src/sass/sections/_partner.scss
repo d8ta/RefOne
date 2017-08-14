@@ -1,22 +1,40 @@
-$block: '.partner';
-#{$block} {
-    &__inner {
+    $block: '.partner';
+    #{$block} {
+        &__break-one {
+            display: inline;
+        }
+        &__title {
+            margin-bottom: .75em;
+        }
+        &__inner {
+            text-align: center;
+            display: inline-block;
+            width: 49%;
+            border-style: solid;
+            border-color: #e6ebef;
+            border-image: none;
+            border-width: 0px 1px 1px 0px;
+            img {
+                max-width: 150px;
+                max-height: 100px;
+            }
+        }
+        @include mq($from: screen-xs) {
+            &__break-one {
 
-        position: relative;
-        display: inline-block;
-        width: 24%; 
-        float: left;
-        margin: 0px;
-        padding: 0px;
-        border-style: solid;
-        border-color: #e6ebef;
-        border-image: none;
-        border-width: 0px 1px 1px 0px;
-        img {
-            max-width: 150px;
-            max-height: auto;
+                display: none;
+            }
+            &__inner {
+                width: 32%;
+            }
+        }
+        @include mq($from: screen-sm) {
+            &__inner {
+                width: 24%;
+            }
+                        &__break-two {
+
+                display: none;
+            }
         }
     }
-    &__logos {
-    }
-}
