@@ -19,10 +19,10 @@ $block: ".section";
         padding-right: $mobile-padding;
         box-sizing: content-box;
         max-width: $width-max-container;
-          @include mq($from: screen-xs) {
+        @include mq($from: screen-xs) {
             padding-right: $side-padding;
             padding-left: $side-padding;
-          }
+        }
         @include clearfix;
         &--inner {
             max-width: em($width-max-container-text);
@@ -38,6 +38,4 @@ $block: ".section";
 
 #{$block}-container {
     position: relative;
-
 }
-

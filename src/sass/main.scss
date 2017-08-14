@@ -2,22 +2,22 @@
 @import "common/functions";
 @import "common/variables";
 @import "common/mixins";
-//@import "common/iconfont";
+@import "common/iconfont";
 @import "common/webfonts";
 @import "common/reset";
 
 /* ======== bower ======== */
-// sass-mq
+
+/* ======== sass-mq ======== */
 @import "../bower_components/sass-mq/mq";
-//scut
+
+
+/* ======== scut ======== */
 @import "../bower_components/scut/dist/scut";
+@import "../bower_components/owl.carousel/dist/assets/owl.carousel.min";
+@import "../bower_components/owl.carousel/dist/assets/owl.theme.default.min";
 
-//@import "../bower_components/owl.carousel/dist/assets/owl.carousel.min";
-//@import "../bower_components/owl.carousel/dist/assets/owl.theme.default.min";
-
-
-
-//bootstrap
+/* ======== bootstrap ======== */
 @import "../bower_components/bootstrap-sass/assets/stylesheets/bootstrap/variables";
 @import "../bower_components/bootstrap-sass/assets/stylesheets/bootstrap/mixins";
 @import "../bower_components/bootstrap-sass/assets/stylesheets/bootstrap/normalize";
@@ -35,12 +35,19 @@
 @import "common/general";
 @import "common/text-base";
 @import "common/text";
+
+/* ======== components ======== */
 @import "components/section";
 @import "components/site-navigation";
 @import "components/btn";
+@import "components/bg-image";
+@import "components/owl-carousel";
 
+/* ======== sections ======== */
 @import "sections/welcome";
 @import "sections/intro";
 @import "sections/details";
 @import "sections/video";
 @import "sections/products";
+@import "sections/slider";
+@import "sections/documentation";

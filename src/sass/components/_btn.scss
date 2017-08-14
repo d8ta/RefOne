@@ -8,8 +8,14 @@ $block: '.btn';
     text-transform: uppercase;
     border-radius: .25em;
     padding: em(15);
+    &--medium {
+        @include mq($from: $screen-md + 50px) {
+            padding: 1em 3.9em;
+        }
+        font-size: 1.3em;
+    }
     &--small {
         padding: em(12) em(30);
-    	font-size: em(18);
+        font-size: em(18);
     }
 }

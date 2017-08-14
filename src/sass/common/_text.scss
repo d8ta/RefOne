@@ -48,5 +48,9 @@
 }
 
 .text-box {
-	@extend %text-box !optional;
+    @extend %text-box !optional;
+}
+
+.text-box-alt {
+	@extend %text-box-alt !optional;
 }

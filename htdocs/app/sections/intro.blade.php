@@ -7,7 +7,7 @@
     $btntext = $block->getBtntext();
     $dark = $block->getDark();
 ?>
-<div class="section__intro @if($dark) section__darkintro @endif">
+<div class="section__intro @if($dark) section__dark @endif">
 	<div class="section__content">	
 		<div class="intro">
 			<h2 class="intro__headline h1 @if($dark) intro__headline h1-dark @endif">{{$headline}} <span class="intro__subline h2">{{$subline}}</span></h2>

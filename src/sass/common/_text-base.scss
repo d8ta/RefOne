@@ -113,3 +113,9 @@ h6,
     margin: 0 auto;
     max-width: 15.6em;
 }
+
+%text-box-alt {
+    @extend %text-box;
+    font-size: em(24);
+    font-weight: bold;
+}

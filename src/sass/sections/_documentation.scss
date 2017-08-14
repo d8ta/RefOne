@@ -1,0 +1,43 @@
+$block: '.documentation';
+#{$block} {
+    text-align: center;
+    margin-left: -2em;
+    margin-right: -2em;
+    &__headline,
+    &__text {
+        color: $color-white;
+    }
+    &__button {
+        padding-top: 1.5em;
+        padding-bottom: 1.5em;
+        margin-top: 2.5em;
+        margin-bottom: 2.5em;
+    }
+    &__box {
+        margin: 0 auto;
+        margin-top: 4em;
+        vertical-align: top;
+        display: block;
+        max-width: 20em;
+        height: auto;
+        padding-left: 1em;
+        padding-right: 1em;
+        &__inner {
+            background: $hobexDarkGrey;
+            padding: .5em;
+            margin-bottom: 5.5em;
+        }
+    }
+    &__text {
+        max-width: 18em;
+        padding-top: 0em;
+    }
+
+    @include mq($from: $screen-xs + 200px) {
+        &__box {
+            max-width: none;
+            width: 49%;
+            display: inline-block;
+        }
+    }
+}

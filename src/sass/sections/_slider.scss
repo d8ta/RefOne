@@ -1,0 +1,9 @@
+$block: '.slider';
+#{$block} {
+    &__slide {
+        &__image {
+            padding-bottom: 37%;
+            background: $hobexDark;
+        }
+    }
+}
