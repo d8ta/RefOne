@@ -62,7 +62,13 @@ h6,
     font-size: .85em;
 }
 
-%h3 {}
+%h3 {
+    font: $font-klavika;
+    line-height: 1.2em;
+    font-weight: normal;
+    font-size: em(22);
+
+}
 
 %h4 {}
 

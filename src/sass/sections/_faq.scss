@@ -1,10 +1,10 @@
 $block: '.faq';
 #{$block} {
-    max-width: 44.44444em;
     &__item {
-        // padding-top: 1.11111em;
-        // padding-bottom: 2.22222em;
-        border-bottom: 1px solid #e6ebef;
+        margin-bottom: 1em;
+        border-bottom: 1px solid $hobexGrey;
+        background: $hobexGrey;
+
         h3 {
             position: relative;
             @include icon("arrow-down", after);
@@ -37,7 +37,7 @@ $block: '.faq';
         display: block;
     }
     .js-accordion__item:hover {
-        background: #e6ebef;
+        background: $hobexGrey;
         cursor: pointer;
     }
 }
