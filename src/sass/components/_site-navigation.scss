@@ -1,5 +1,7 @@
 $block: '.site-navigation';
 #{$block} {
+    margin-top: 2.5em;
+    margin-right: 1em;
     &__toggler {
         display: none;
     }
@@ -13,7 +15,6 @@ $block: '.site-navigation';
         font-weight: 400;
         @include clearfix;
     }
-    margin-top: 2.75em;
     @include mq($until: width-mobile-menu) {
         display: none;
     }
