@@ -34,9 +34,9 @@ class ContactForm extends Action
 		
 		$label_subject = __('Your Request');
 
-		$companySubject = 'Siconnex - Neue Kontaktanfrage';
+		$companySubject = 'Hobex - Neue Kontaktanfrage';
 		$companyView = 'ajax.contact-form.company';
-		$feedbackSubject = 'Siconnex - ' . $label_subject;
+		$feedbackSubject = 'Hobex - ' . $label_subject;
 		$feedbackView = 'ajax.contact-form.feedback';
 
 		try {
@@ -45,35 +45,19 @@ class ContactForm extends Action
 
 			$v = new Validator( $data );
 
-			$v->rule('required', ['firstname', 'lastname', 'company', 'email', 'phone', 'message']);
+			$v->rule('required', ['name', 'email']);
 			$v->rule('email', 'email');
 
 
 			if (!$v->validate()) {throw new Exception('Form not correct', 10);}
 
 
-			$customer_name = $data['firstname'] . ' ' . $data['lastname'];
-
-
+			$customer_name = $data['name'];
 
 
 			$templateEngine = TemplateEngine::getInstance();
 			$email = Email::getInstance();
 			
-			if ($data['recipient'] == 'sales') {
-				$sendto = $_config->getItem('mail.to_sales');
-			}
-			if ($data['recipient'] == 'service') {
-				$sendto = $_config->getItem('mail.to_service');
-
-			}
-			if ($data['recipient'] == 'purchase') {
-			 	$sendto = $_config->getItem('mail.to_purchase');
-
-			}
-			if ($data['recipient'] == 'career') {
-				$sendto = $_config->getItem('mail.to_career');
-			}
 
 			$data['sendto'] = $sendto;
 

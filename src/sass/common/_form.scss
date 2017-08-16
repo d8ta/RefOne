@@ -4,13 +4,13 @@ $form-padding: em(30);
     position: relative;
     text-align: left;
     max-width: em(650);
-    margin-top: em(80);
+    margin: 0 auto;
     &__fields {
         position: relative;
         z-index: 10;
         transition: transform 350ms $ease-in-cubic, opacity 300ms;
-        margin-left: -$form-padding;
-        margin-right: -$form-padding;
+        margin-left: 1em;
+        margin-right: 1em;
         @include clearfix;
         &__table {
             padding-left: $form-padding;
@@ -25,7 +25,7 @@ $form-padding: em(30);
             &__btn {
                 display: table-cell;
                 vertical-align: middle;
-                margin-left: 1em;
+                width: 100%
             }
             @include mq($until: 453px) {
                 display: block;
@@ -39,12 +39,13 @@ $form-padding: em(30);
             }
         }
         &__row {
-            width: 50%;
+            width: 100%;
             float: left;
             margin-bottom: 1.3em;
             padding-left: $form-padding;
             padding-right: $form-padding;
             position: relative;
+            // color: $color-white;
             &--full {
                 width: 100%;
             }
