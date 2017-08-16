@@ -2,12 +2,15 @@
     #{$block} {
         color: $color-white;
         text-align: center;
-        &__box {}
+        &__text {
+            padding-top: em(10);
+        }
         &__iconboxes {
             display: table;
             margin: 0 auto;
-                margin-top: -2.75em;
-            border-spacing: 3em;
+            // margin-top: -2.75em;
+            border-spacing: 3em 0;
+            border-collapse:separate;
             &__box {
                 display: table-cell;
                 &__text {

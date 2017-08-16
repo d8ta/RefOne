@@ -80,13 +80,12 @@ h6,
     line-height: 1.4;
     font-size: em(24);
     font-weight: bold;
-    padding-top: 2em;
-    max-width: 46em;
+    // max-width: 46em;
 }
 
 %contact-label {
     @extend %text-base;
-    font-size: em(18);
+    font-size: 1.125em;
 }
 
 %headline-box {
