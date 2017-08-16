@@ -21,7 +21,7 @@ var sassLint = require('gulp-sass-lint');
 var yargs = require('yargs').argv;
 
 /* ======== Variables ======== */
-var fontName = 'iconfont_v1';
+var fontName = 'iconfont_v2';
 
 var paths = {
     prefix: {

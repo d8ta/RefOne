@@ -22,18 +22,18 @@ $formHelper = Project\Helpers\FormHelper::getInstance();
     <div class="section__content">
         <div class="contact">
             <h2 class="contact__headline h1-dark">{{$headline}}</h2>
-            <div class="contact__text text-base-dark editor-content">{!!$intro!!}</div>
+            <div class="contact__text text-base-dark">{!!$intro!!}</div>
             <div class="contact__iconboxes">
                 <div class="contact__iconboxes__left">
-                    <img class="contact__iconboxes__left__icon" src="{{$iconleft}}" alt="{{$iconleft}} Icon"> 
+                    <img class="contact__iconboxes__left__icon" src="assets/iconfont/{{$iconleft}}.svg" alt="{{$iconleft}} Icon"> 
                     <div class="contact__iconboxes__left__text">{{$textleft}}</div>
                 </div>
                 <div class="contact__iconboxes__right">
-                    <img class="contact__iconboxes__right__icon" src="{{$iconright}}" alt="{{$iconright}} Icon"> 
+                    <img class="contact__iconboxes__right__icon" src="assets/iconfont/{{$iconleft}}.svg" Icon"> 
                     <div class="contact__iconboxes__right__text">{{$textright}}</div>
                 </div>
             </div>
-            <div class="contact__closer text-base-dark editor-content">{!!$closer!!}</div>
+            <div class="contact__closer text-base-dark">{!!$closer!!}</div>
         </div>
         <div class="contact-form__content">
             <form class="form js-ajax-form js-validate" action="{!!$_ajaxHelper->getUrl('contact-form')!!}"

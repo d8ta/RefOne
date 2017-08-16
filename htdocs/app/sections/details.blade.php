@@ -14,7 +14,7 @@
 				<div class="details__box">
 					<img class="details__icon" src="{{$icon}}" alt="{{$icon}} Icon">
 					<h2 class="details__headline headline-box">{{$headline}}</h2>
-					<div class="details__text editor-content text-box">{!!$text!!}</div>
+					<div class="details__text text-box">{!!$text!!}</div>
 				</div>
 			@endforeach
 		</div>

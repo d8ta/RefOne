@@ -14,7 +14,7 @@
 				<div class="documentation__box">
 					<div class="documentation__box__inner">
 						<h2 class="documentation__headline headline-box-alt">{{$headline}}</h2>
-						<div class="documentation__text editor-content text-box-alt">{!!$text!!}</div>
+						<div class="documentation__text text-box-alt">{!!$text!!}</div>
 						<div class="documentation__button">
 							<a class="btn btn--medium" href="{{$btnurl}}">{{$btntext}}</a>	
 						</div>
