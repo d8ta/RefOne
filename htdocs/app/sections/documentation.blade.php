@@ -1,9 +1,10 @@
 <?php
 	$boxes = $block->getBoxes();
 ?>
-<div class="section-documentation section--dark">
+<div class="section--dark section--padding">
 	<div class="section__content">
 		<div class="documentation">
+		<div class="documentation__inner">
 			@foreach ($boxes as $box)
 				<?php
 					$headline = $box['headline'];
@@ -22,5 +23,6 @@
 				</div>
 			@endforeach
 		</div>
+	</div>
 	</div>
 </div>

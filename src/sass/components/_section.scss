@@ -13,6 +13,9 @@ $block: ".section";
     &--margin {
         margin: rem(60) 0;
     }
+    &--padding {
+        padding: rem(60) 0;
+    }
     &__content {
         margin: 0 auto;
         padding-left: $mobile-padding;

@@ -24,6 +24,7 @@
     "owl.carousel": "^2.2.1",
     "lazyloadxt": "^1.0.5",
     "bowser": "^1.7.1",
-    "parsleyjs": "^2.7.2"
+    "parsleyjs": "^2.7.2",
+    "fastclick": "^1.0.6"
   }
 }
