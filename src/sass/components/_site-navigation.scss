@@ -2,6 +2,9 @@ $block: '.site-navigation';
 #{$block} {
     margin-top: 2.5em;
     margin-right: 1em;
+    &__nav {
+            margin-right: -5em;
+    }
     &__toggler {
         display: none;
     }
