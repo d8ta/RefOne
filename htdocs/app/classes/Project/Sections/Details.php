@@ -15,10 +15,10 @@ class Details extends \A365\Wordpress\Block\AcfBlock {
 	{
 		return [
 			FieldHelper::createRepeater('box', 'Boxes', ["min" => 6, "max" => 6])
-				->addSubfields([
-					FieldHelper::createText('icon', 'Iconname'),
-					FieldHelper::createText('headline', 'Überschrift')->setRequired(),
-					FieldHelper::createWYSIWYG('text', 'Text')->setRequired(),
+			->addSubfields([
+				FieldHelper::createText('icon', 'Iconname'),
+				FieldHelper::createText('headline', 'Überschrift')->setRequired(),
+				FieldHelper::createWYSIWYG('text', 'Text')->setRequired(),
 			])
 		];
 	}

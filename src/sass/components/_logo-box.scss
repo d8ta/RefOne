@@ -1,0 +1,17 @@
+$block: '.logo-box';
+#{$block} {
+    margin: em(10) 0;
+    display: block;
+    img {
+        max-width: 17em;
+        width: 100%;
+        height: auto;
+        margin-top: .5em;
+    }
+    @include mq($until: header-smaller) {
+        margin: 0;
+        img {
+            max-width: 11em;
+        }
+    }
+}

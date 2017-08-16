@@ -35,13 +35,18 @@
 @import "common/general";
 @import "common/text-base";
 @import "common/text";
+@import "common/form";
 
 /* ======== components ======== */
 @import "components/section";
 @import "components/site-navigation";
+@import "components/site-header";
 @import "components/btn";
 @import "components/bg-image";
 @import "components/owl-carousel";
+@import "components/editor-content";
+@import "components/logo-box";
+
 
 /* ======== sections ======== */
 @import "sections/welcome";
@@ -53,3 +58,4 @@
 @import "sections/documentation";
 @import "sections/faq";
 @import "sections/partner";
+@import "sections/contact";

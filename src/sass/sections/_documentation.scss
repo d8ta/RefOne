@@ -1,43 +1,40 @@
 $block: '.documentation';
+$documentation-margin: em(40);
 #{$block} {
-    text-align: center;
-    margin-left: -2em;
-    margin-right: -2em;
+    margin-left: -$documentation-margin;
+    margin-right: -$documentation-margin;
+    &__inner {
+        display: table;
+        border-spacing: $documentation-margin 0;
+        border-collapse: separate;
+        width: 100%;
+    }
+
+
     &__headline,
     &__text {
         color: $color-white;
     }
     &__button {
-        padding-top: 1.5em;
-        padding-bottom: 1.5em;
-        margin-top: 2.5em;
-        margin-bottom: 2.5em;
+        position: absolute;
+        bottom: em(25);
+        width: 100%;
+        text-align: center;
+        left: 0;
+
     }
     &__box {
-        margin: 0 auto;
-        margin-top: 4em;
+        display: table-cell;
+        padding-bottom: em(100);
         vertical-align: top;
-        display: block;
-        max-width: 20em;
-        height: auto;
-        padding-left: 1em;
-        padding-right: 1em;
+        background: $hobexDarkGrey;
+        position: relative;
         &__inner {
-            background: $hobexDarkGrey;
             padding: .5em;
-            margin-bottom: 5.5em;
         }
     }
     &__text {
         max-width: 18em;
         padding-top: 0em;
-    }
-
-    @include mq($from: $screen-xs + 200px) {
-        &__box {
-            max-width: none;
-            width: 49%;
-            display: inline-block;
-        }
     }
 }

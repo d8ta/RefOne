@@ -19,7 +19,7 @@
 					<div class="products__box__inner">
 						<img class="products__icon" src="{{$icon}}" alt="{{$icon}} Icon">
 						<h2 class="products__headline headline-box-alt">{{$headline}}</h2>
-						<div class="products__text editor-content text-box">{!!$text!!}</div>
+						<div class="products__text text-box">{!!$text!!}</div>
 						<div class="products__button">
 							<a class="btn btn--small" href="{{$btnurl}}">{{$btntext}}</a>	
 						</div>

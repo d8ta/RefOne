@@ -8,6 +8,7 @@ $block: '.btn';
     text-transform: uppercase;
     border-radius: .25em;
     padding: em(15);
+    display: inline-block;
     &--medium {
         @include mq($from: $screen-md + 50px) {
             padding: 1em 3.9em;

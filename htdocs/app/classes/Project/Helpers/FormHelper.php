@@ -3,10 +3,10 @@ namespace Project\Helpers;
 
 class FormHelper extends \A365\Core\Abstracts\Helper
 {
-	
+
 
 	public function getFormField($name, $label, $params = array()) {
-		
+
 		$input = '<input class="form-control" type="text" name="form[' . $name . ']" required>';
 
 		if (array_key_exists("type", $params)) {
@@ -24,7 +24,7 @@ class FormHelper extends \A365\Core\Abstracts\Helper
 
 
 		$ret = '<div class="' . $form_field_row . '">
-							<label class="form__fields__row__label">' . $label . '</label>
+							<label class="form__fields__row__label">' . $label . '*</label>
 							<div class="form__fields__row__input">
 								' . $input . '
 							</div>

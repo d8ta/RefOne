@@ -13,6 +13,9 @@ $block: ".section";
     &--margin {
         margin: rem(60) 0;
     }
+    &--padding {
+        padding: rem(60) 0;
+    }
     &__content {
         margin: 0 auto;
         padding-left: $mobile-padding;
@@ -33,6 +36,15 @@ $block: ".section";
         margin-left: auto;
         margin-right: auto;
         display: block;
+    }
+
+    &--intro {
+        background: $hobexGrey;
+    }
+
+    &--dark {
+        background: $hobexDark;
+        color: $color-white;
     }
 }
 

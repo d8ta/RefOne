@@ -1,6 +1,5 @@
 function Owlcarousel($element) {
     this.elements.owl = $element;
-    this.elements.owl.find(".js-owl-item").shuffle();
     this.init();
 
     return {};

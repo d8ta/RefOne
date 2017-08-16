@@ -1,6 +1,5 @@
 <!DOCTYPE html>
-<!--[if lt IE 9 ]>    <html class="show-incompatible_browser-alert" <?php language_attributes(); ?>> <![endif]-->
-<!--[if (gt IE 8)|!(IE)]><!--> <html class="no-js" <?php language_attributes(); ?>> <!--<![endif]-->
+<html class="no-js" {{ language_attributes() }} >
     @include('components.html.head')
 
     <body <?php body_class(); ?>>
