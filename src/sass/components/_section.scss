@@ -34,6 +34,15 @@ $block: ".section";
         margin-right: auto;
         display: block;
     }
+
+    &--intro {
+        background: $hobexGrey;
+    }
+
+    &--dark {
+        background: $hobexDark;
+        color: $color-white;
+    }
 }
 
 #{$block}-container {

@@ -1,7 +1,7 @@
 <?php
 	$boxes = $block->getBoxes();
 ?>
-<div class="section-documentation section__dark">
+<div class="section-documentation section--dark">
 	<div class="section__content">
 		<div class="documentation">
 			@foreach ($boxes as $box)

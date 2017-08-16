@@ -18,19 +18,24 @@ $keyHoneyPot = \Project\Ajax\Actions\ContactForm::KEY_HONEYPOT;
 $formHelper = Project\Helpers\FormHelper::getInstance();
 ?>
 
-<section class="section section--margin section__dark">
+<section class="section section--margin section--dark">
     <div class="section__content">
         <div class="contact">
             <h2 class="contact__headline h1-dark">{{$headline}}</h2>
             <div class="contact__text text-base-dark">{!!$intro!!}</div>
             <div class="contact__iconboxes">
-                <div class="contact__iconboxes__left">
-                    <img class="contact__iconboxes__left__icon" src="assets/iconfont/{{$iconleft}}.svg" alt="{{$iconleft}} Icon"> 
-                    <div class="contact__iconboxes__left__text">{{$textleft}}</div>
+                <div class="contact__iconboxes__box">
+                    <div class="contact__iconboxes__box__icon">
+                        <i class="icon icon-{{$iconleft}}"></i>
+                    </div>
+                    
+                    <div class="contact__iconboxes__box__text text-base-dark">{!!$textleft!!}</div>
                 </div>
-                <div class="contact__iconboxes__right">
-                    <img class="contact__iconboxes__right__icon" src="assets/iconfont/{{$iconleft}}.svg" Icon"> 
-                    <div class="contact__iconboxes__right__text">{{$textright}}</div>
+                <div class="contact__iconboxes__box">
+                    <div class="contact__iconboxes__box__icon">
+                        <i class="icon icon-{{$iconright}}"></i>
+                    </div>
+                    <div class="contact__iconboxes__box__text text-base-dark">{!!$textright!!}</div>
                 </div>
             </div>
             <div class="contact__closer text-base-dark">{!!$closer!!}</div>

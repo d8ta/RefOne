@@ -17,8 +17,4 @@ Page.prototype.elements = {
 
 Page.prototype.init = function() {
 
-	jQuery(".js-selectize").selectize({
-            create: false
-        });
-
 };

@@ -1,4 +1,21 @@
     $block: '.contact';
     #{$block} {
-        
+        color: $color-white;
+        text-align: center;
+        &__box {}
+        &__iconboxes {
+            display: table;
+            margin: 0 auto;
+                margin-top: -2.75em;
+            border-spacing: 3em;
+            &__box {
+                display: table-cell;
+                &__text {
+                    padding-top: 0;
+                }
+            }
+        }
+        i {
+            font-size: 3em;
+        }
     }
