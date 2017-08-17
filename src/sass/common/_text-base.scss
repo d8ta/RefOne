@@ -78,7 +78,11 @@ h6,
 
 }
 
-%h4 {}
+%h4 {
+    @extend %text-base-dark;
+    font-size: em(24);
+    font-weight: bold;    
+}
 
 %h5 {
     font-size: 1;
