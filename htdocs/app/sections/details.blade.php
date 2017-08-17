@@ -12,9 +12,7 @@
 					$text = $box['text'];
 				?>
 				<div class="details__box">
-					 {{-- <div class="details__box__icon"> --}}
-                        <i class="icon icon-{{$icon}}"></i>
-                    {{-- </div> --}}
+                    <i class="icon icon-{{$icon}}"></i>
 					<h2 class="details__headline headline-box">{{$headline}}</h2>
 					<div class="details__text text-box">{!!$text!!}</div>
 				</div>

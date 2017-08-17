@@ -1,26 +1,37 @@
     $block: '.details';
-#{$block} {
-    text-align: center;
-    &__box {
-    	display: block;
+    #{$block} {
+        text-align: center;
+        &__headline {
+            line-height: 1.2;
+            height: 3em;
+        }
+        &__text {
+            p {
+                margin-bottom: 1.6em;
+            }
+        }
+        &__box {
+            display: block;
             vertical-align: top;
             margin-top: 4em;
             height: auto;
-    }
-    @include mq($from: $screen-xs + 50) {
-        &__box {
-            display: inline-block;
-            padding-left: 1em;
-            padding-right: 1em;
-            width: 49%;
-            text-align: center;
-            margin-top: 2em;
+            i {
+                font-size: 6em;
+            }
         }
-    }
+        @include mq($from: $screen-xs + 50) {
+            &__box {
+                display: inline-block;
+                padding-left: 1em;
+                padding-right: 1em;
+                width: 49%;
+                text-align: center;
+                margin-top: 1em;
+            }
+        }
         @include mq($from: $screen-sm + 42) {
             &__box {
                 width: 32%;
             }
         }
     }
-    
