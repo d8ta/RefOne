@@ -4,8 +4,11 @@ $block: '.products';
     margin-left: -2em;
     margin-right: -2em;
     &__button {
-        padding-top: 1.5em;
-        padding-bottom: 1.5em;
+        padding-top: 1em;
+        padding-bottom: 1em;
+    }
+    &__headline {
+        line-height: 1;
     }
     &__box {
         margin: 0 auto;
@@ -19,11 +22,16 @@ $block: '.products';
         &__inner {
             background: $hobexGrey;
             padding: .5em;
+            padding-top: 1em;
+        }
+        i {
+            font-size: 6em;
+            vertical-align: middle;
         }
     }
     &__text {
         max-width: 12em;
-        height: 12em;
+        margin-top: 1em;
     }
 
     @include mq($from: $screen-xs + 100px) {
