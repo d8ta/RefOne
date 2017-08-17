@@ -5,5 +5,9 @@ $block: '.slider';
             padding-bottom: 37.5%;
             background: $hobexDark;
         }
+        &__headline,
+        &__text {
+            color: $color-white;
+        }
     }
 }

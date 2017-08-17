@@ -3,12 +3,20 @@
     @extend %h1 !optional;
 }
 
+.h1-dark {
+    @extend %h1-dark !optional;
+}
+
 .h1-welcome {
 	@extend %h1-welcome !optional;
 }
 
 .h2 {
     @extend %h2 !optional;
+}
+
+.h2-dark {
+    @extend %h2-dark !optional;
 }
 
 .h3 {
@@ -33,6 +41,10 @@
 
 .contact-label {
     @extend %contact-label !optional;
+}
+
+.text-base-dark {
+	@extend %text-base-dark !optional;
 }
 
 .headline-box {
