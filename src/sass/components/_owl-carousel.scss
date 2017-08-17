@@ -1,5 +1,5 @@
 .owl-dots {
-    padding: em(120) 0 em(20);
+    padding: 2em 0 1.25em;
     text-align: center;
     background-color: $hobexDark;
 }
@@ -27,7 +27,7 @@
 
 .owl-prev,
 .owl-next {
-height: 2.625em;
+    height: 2.625em;
     width: 2.625em;
     margin: auto 0;
     color: $color-white;

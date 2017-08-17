@@ -11,7 +11,7 @@ $block: ".section";
     }
 
     &--margin {
-        margin: rem(60) 0;
+        margin: 4rem 0;
     }
     &--padding {
         padding: rem(60) 0;
@@ -44,7 +44,6 @@ $block: ".section";
 
     &--dark {
         background: $hobexDark;
-        color: $color-white;
     }
 }
 

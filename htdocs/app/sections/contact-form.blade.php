@@ -21,26 +21,26 @@ $formHelper = Project\Helpers\FormHelper::getInstance();
 <section class="section section--padding section--dark">
     <div class="section__content">
         <div class="contact">
-            <div class="contact__headline h1">{{$headline}}</div>
-            <div class="contact__text text-base">{!!$intro!!}</div>
+            <div class="contact__headline h1-dark">{{$headline}}</div>
+            <div class="contact__text text-base-dark">{!!$intro!!}</div>
             <div class="contact__iconboxes">
                 <div class="contact__iconboxes__box">
                     <div class="contact__iconboxes__box__icon">
                         <i class="icon icon-{{$iconleft}}"></i>
                     </div>
                     <div class="contact-label">TEL.</div>
-                    <div class="contact__iconboxes__box__text text-base">{!!$textleft!!}</div>
+                    <div class="contact__iconboxes__box__text text-base-dark">{!!$textleft!!}</div>
                 </div>
                 <div class="contact__iconboxes__box">
                     <div class="contact__iconboxes__box__icon">
                         <i class="icon icon-{{$iconright}}"></i>
                     </div>
                     <div class="contact-label">E-MAIL</div>
-                    <div class="contact__iconboxes__box__text text-base">{!!$textright!!}</div>
+                    <div class="contact__iconboxes__box__text text-base-dark">{!!$textright!!}</div>
                 </div>
             </div>
             <div class="contact-label">ODER PER</div>
-            <div class="contact__iconboxes__box__text text-base">{!!$closer!!}</div>
+            <div class="contact__iconboxes__box__text text-base-dark">{!!$closer!!}</div>
         </div>
         <div class="contact-form__content">
             <form class="form js-ajax-form js-validate" action="{!!$_ajaxHelper->getUrl('contact-form')!!}"

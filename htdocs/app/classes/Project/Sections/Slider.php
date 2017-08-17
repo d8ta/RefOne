@@ -17,6 +17,8 @@ class Slider extends \A365\Wordpress\Block\AcfBlock {
 			FieldHelper::createRepeater('slides', 'Slides', ["min" => 1, "max" => 3])
 				->addSubfields([
 					FieldHelper::createImageCrop('background', 'Hintergrund', ["crop_type" => "hard", 'target_size' => 'custom', 'force_crop' => 'no', 'save_format' => 'url', "width" => 1600, "height" => 600])->setRequired(),
+					FieldHelper::createText('headline', 'Überschrift')->setRequired(),
+					FieldHelper::createText('text', 'Text')->setRequired(),
 			])
 		];
 	}

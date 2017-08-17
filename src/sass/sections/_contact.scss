@@ -7,10 +7,9 @@
         }
         &__iconboxes {
             display: table;
-            margin: 0 auto;
-            // margin-top: -2.75em;
+            margin: 0 auto; // margin-top: -2.75em;
             border-spacing: 3em 0;
-            border-collapse:separate;
+            border-collapse: separate;
             &__box {
                 display: table-cell;
                 &__text {
