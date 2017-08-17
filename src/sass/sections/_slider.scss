@@ -4,6 +4,9 @@ $block: '.slider';
         &__image {
             padding-bottom: 37.5%;
             background: $hobexDark;
+                background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
         }
         &__text {
             color: $color-white;

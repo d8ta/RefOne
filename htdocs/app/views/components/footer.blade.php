@@ -5,7 +5,7 @@
 			</div>
 			<div class="site-footer__table">
 				<div class="site-footer__copy">
-					&copy; {{date("Y")}} {{get_bloginfo()}}
+					&copy; {{date("Y")}} hobex AG
 				</div>
 				@include('components.footer.navigation')
 				<img class="site-footer__logo" src="assets/images/layout/paymentlogo.png" alt="Payment Logo">
