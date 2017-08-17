@@ -1,19 +1,23 @@
 $block: '.intro';
 #{$block} {
-    margin-top: rem(60);
+    margin-top: 3.5rem;
     margin-bottom: rem(60);
     text-align: center;
     a {
         display: block;
         max-width: 23em;
         margin: 0 auto;
-        margin-top: em(30);
+        margin-top: 1.2em;
         &:hover {
             color: $color-white;
         }
     }
     &__text {
         margin: 0 auto;
+        padding-top: 1.5em;
+        p {
+            margin-bottom: 1em;
+        }
     }
     &__logos {
         display: none;

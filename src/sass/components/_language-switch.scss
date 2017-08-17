@@ -50,12 +50,13 @@ $block: '.language-switch';
         line-height: 1.2em;
         vertical-align: middle;
         font-family: $font-normal;
-        padding: em(6) 0 em(6) em(25);
-        background: $color-white;
+        padding: em(6) 0 em(6) em(20);
+        background-color: $color-white;
         display: block;
         width: 100%;
         text-align: left;
         transition: color .3s;
+        font-size: 1.25em;
         html.no-touchevents &:hover {
             color: darken($color-text-grey, 20);
         }

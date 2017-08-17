@@ -24,6 +24,7 @@ h6,
     text-transform: uppercase;
     font-size: em(60);
     text-align: center;
+    color: $hobexDark;
 }
 
 %h1-welcome {
@@ -55,6 +56,7 @@ h6,
     font-style: italic;
     text-transform: none;
     font-size: .85em;
+    color: $hobexDark;
 }
 
 %h3 {
@@ -62,6 +64,7 @@ h6,
     line-height: 1.2em;
     font-weight: normal;
     font-size: em(22);
+    color: $hobexDark;
 
 }
 
@@ -80,6 +83,7 @@ h6,
     line-height: 1.4;
     font-size: em(24);
     font-weight: bold;
+    color: $hobexDark;
     // max-width: 46em;
 }
 
