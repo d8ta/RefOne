@@ -10,7 +10,7 @@ $block: '.btn';
     padding: em(15);
     display: inline-block;
     &--medium {
-        @include mq($from: $screen-md + 50px) {
+        @include mq($from: $screen-md + 150px) {
             padding: 1em 3.9em;
         }
         font-size: 1.3em;

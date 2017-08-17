@@ -101,6 +101,7 @@ h6,
 }
 
 %text-base-dark {
+    @extend %text-base;
     color: $color-white;
 }
 

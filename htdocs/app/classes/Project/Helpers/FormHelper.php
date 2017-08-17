@@ -5,15 +5,18 @@ class FormHelper extends \A365\Core\Abstracts\Helper
 {
 
 
-	public function getFormField($name, $label, $params = array()) {
+	public function getFormField($name, $placeholder, $params = array()) {
 
-		$input = '<input class="form-control" type="text" name="form[' . $name . ']" required>';
+		$input = '<input class="form-control" type="text" placeholder="' . $placeholder . '" name="form[' . $name . ']" required>';
 
 		if (array_key_exists("type", $params)) {
 			$input = '<input class="form-control" type="' . $params["type"] . '" name="form[' . $name . ']" required>';
 
 			if ($params["type"] == "textarea") {
-				$input = '<textarea class="form-control" name="form[' . $name . ']" required></textarea>';
+				$input = '<textarea class="form-control" placeholder="' . $placeholder . '" name="form[' . $name . ']" required></textarea>';
+			}
+			if ($params["type"] == "email") {
+				$input = '<input class="form-control" placeholder="' . $placeholder . '" name="form[' . $name . ']" required></input>';
 			}
 		}
 
@@ -24,7 +27,7 @@ class FormHelper extends \A365\Core\Abstracts\Helper
 
 
 		$ret = '<div class="' . $form_field_row . '">
-							<label class="form__fields__row__label">' . $label . '*</label>
+							<label class="form__fields__row__label"></label>
 							<div class="form__fields__row__input">
 								' . $input . '
 							</div>

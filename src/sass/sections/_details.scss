@@ -17,6 +17,7 @@
             height: auto;
             i {
                 font-size: 6em;
+                color: $hobexDarkGrey;
             }
         }
         @include mq($from: $screen-xs + 50) {

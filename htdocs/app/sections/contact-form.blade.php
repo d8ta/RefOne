@@ -48,8 +48,8 @@ $formHelper = Project\Helpers\FormHelper::getInstance();
                 <div class="form__fields">
                     <?php
                     echo $formHelper->getFormField("company", __('Company'));
-                    echo $formHelper->getFormField("firstname", __('Name'));
-                    echo $formHelper->getFormField("email", __('E-Mail'), ["type" => "email"]);
+                    echo $formHelper->getFormField("firstname", __('Name*'));
+                    echo $formHelper->getFormField("email", __('E-Mailadresse*'), ["type" => "email"]);
                     echo $formHelper->getFormField("phone", __('Phone'));
                     echo $formHelper->getFormField("message", __('Message'), ["type" => "textarea", "size" => "full"]);
                     echo $formHelper->getHoneyField();
