@@ -2,14 +2,11 @@ $block: '.faq';
 #{$block} {
     &__logobox {
         margin: 0 auto 2em auto;
-        // display: table;
         border-spacing: 2em 0;
         border-collapse: separate;
         text-align: center;
         &__headline,
-        &__logo {
-            // display: table-cell;
-        }
+        &__logo {}
     }
     &__item {
         margin-bottom: .75em;
@@ -52,8 +49,14 @@ $block: '.faq';
         background: $hobexGrey;
         cursor: pointer;
     }
-     @include mq($from: screen-sm) {
+    @include mq($from: screen-sm) {
+        &__logobox {
+            display: table;
 
-     }
-
+            &__headline,
+            &__logo {
+                display: table-cell;
+            }
+        }
+    }
 }

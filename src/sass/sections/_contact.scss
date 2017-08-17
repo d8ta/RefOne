@@ -6,12 +6,12 @@
             padding-top: em(10);
         }
         &__iconboxes {
-            display: table;
+            // display: table;
             margin: 0 auto; // margin-top: -2.75em;
             border-spacing: 3em 0;
             border-collapse: separate;
             &__box {
-                display: table-cell;
+                // display: table-cell;
                 &__text {
                     padding-top: 0;
                 }
@@ -19,5 +19,14 @@
         }
         i {
             font-size: 3em;
+        }
+        @include mq($from: screen-sm) {
+            &__iconboxes {
+                display: table;
+
+                &__box {
+                    display: table-cell;
+                }
+            }
         }
     }
