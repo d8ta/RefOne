@@ -1,12 +1,24 @@
 $block: '.faq';
 #{$block} {
+    &__logobox {
+        margin: 0 auto 2em auto;
+        // display: table;
+        border-spacing: 2em 0;
+        border-collapse: separate;
+        text-align: center;
+        &__headline,
+        &__logo {
+            // display: table-cell;
+        }
+    }
     &__item {
-        margin-bottom: 1em;
+        margin-bottom: .75em;
         border-bottom: 1px solid $hobexGrey;
         background: $hobexGrey;
 
         h3 {
             position: relative;
+            padding: .5em;
             @include icon("arrow-down", after);
             &:after {
                 position: absolute;
@@ -25,7 +37,7 @@ $block: '.faq';
             }
         }
     }
-    .js-accordion__item {
+    .js-accordion__itemjs-accordion__item {
         transition: all 0.3s;
         padding: 0.9em 0.8em 0.3em 0.8em;
         &__text {
@@ -40,4 +52,8 @@ $block: '.faq';
         background: $hobexGrey;
         cursor: pointer;
     }
+     @include mq($from: screen-sm) {
+
+     }
+
 }
