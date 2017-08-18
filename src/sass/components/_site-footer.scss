@@ -1,28 +1,21 @@
 $block: '.site-footer';
 #{$block} {
     &__table {
-        position: relative; // display: table;
+        position: relative;
         width: 100%;
         margin-top: 0.75em;
         margin-bottom: 2.75em;
     }
     &__nav {
-        // display: table-cell;
+
         vertical-align: bottom;
     }
     &__logo {
-        // position: absolute;
-        // right: 0;
+
         width: 100%;
         margin-top: 1em;
         max-width: 32em;
-    } // ul li {
-    //     display: inline;
-    //     padding-left: .5em;
-    // }
-    // nav {
-    // display: table-cell;
-    // }
+    }
     @include mq($from: screen-sm) {
         text-align: center;
         &__table {
@@ -36,7 +29,7 @@ $block: '.site-footer';
             margin: 1em auto;
         }
     }
-    @include mq($from: $screen-lg + 100) {
+    @include mq($from: $screen-lg + 150) {
         text-align: left;
         &__table {
             display: table;
