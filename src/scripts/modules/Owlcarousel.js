@@ -48,8 +48,8 @@ Owlcarousel.prototype.options = {
     animateOut: undefined,
     smartSpeed: 200,
     slideBy: 2,
-    navSpeed: 400,
-    dotsSpeed: 400,
+    navSpeed: 500,
+    dotsSpeed: 500,
     touchDrag: true,
     mouseDrag: false,
     navText: [

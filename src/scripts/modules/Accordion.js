@@ -1,7 +1,7 @@
 function Accordion($element) {
 
     this.$element = $element;
-    this.$mainNav = jQuery('.main-nav');
+    this.$mainNav = jQuery('.site-header');
 
     this.init();
 
@@ -38,7 +38,7 @@ Accordion.prototype.clickHandler = function(event) {
         $clicked.next().slideDown();
 
         setTimeout(function(){
-        	$clicked.velocity('scroll', {offset: _this.$mainNav.height() * -1, easing: 'easeInOutCubic', duration: 1200 });
+            $clicked.velocity('scroll', {offset: _this.$mainNav.height() * -1, easing: 'easeInOutCubic', duration: 1200 });
         }, 400);
 
     } else {
