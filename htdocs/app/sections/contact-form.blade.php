@@ -36,7 +36,7 @@ $formHelper = Project\Helpers\FormHelper::getInstance();
                         <i class="icon icon-{{$iconright}}"></i>
                     </div>
                     <div class="contact-label">E-MAIL</div>
-                    <div class="contact__iconboxes__box__text text-base-dark">{!!$textright!!}</div>
+                    <div class="contact__iconboxes__box__text text-base-dark"><a href="mailto:vertrieb@hobex.at" target="_top">{!!$textright!!}</a></div>
                 </div>
             </div>
             <div class="contact-label">ODER PER</div>
