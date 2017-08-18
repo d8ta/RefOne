@@ -1,21 +1,53 @@
 $block: '.site-footer';
 #{$block} {
     &__table {
-display: table;
-    width: 100%;
-    margin-top: 0.75em;
-    margin-bottom: 2.75em;
+        position: relative; // display: table;
+        width: 100%;
+        margin-top: 0.75em;
+        margin-bottom: 2.75em;
+    }
+    &__nav {
+        // display: table-cell;
+        vertical-align: bottom;
     }
     &__logo {
-        display: table-cell;
-        padding-left: 12em;
+        // position: absolute;
+        // right: 0;
+        width: 100%;
+        margin-top: 1em;
+        max-width: 32em;
+    } // ul li {
+    //     display: inline;
+    //     padding-left: .5em;
+    // }
+    // nav {
+    // display: table-cell;
+    // }
+    @include mq($from: screen-sm) {
+        text-align: center;
+        &__table {
+            margin-top: 2em;
+        }
+        ul li {
+            display: inline;
+            padding-left: .5em;
+        }
+        &__logo {
+            margin: 1em auto;
+        }
     }
-    ul li {
-        display: inline;
-        padding-left: .5em;
-    }
-    nav {
-        display: table-cell;
-
+    @include mq($from: $screen-lg + 100) {
+        text-align: left;
+        &__table {
+            display: table;
+        }
+        &__nav {
+            display: table-cell;
+        }
+        &__logo {
+            position: absolute;
+            right: 0;
+            margin: 0;
+        }
     }
 }

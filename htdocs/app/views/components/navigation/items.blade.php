@@ -9,6 +9,7 @@
 $nextLevel = $level + 1;
 ?>
 <ul class="navigation__list navigation__list--level-{!!$level!!}">
+        <li>&copy; {{date("Y")}} hobex AG </li>
     @foreach($items as $item)
         <?php
         $page_id = get_the_ID();
