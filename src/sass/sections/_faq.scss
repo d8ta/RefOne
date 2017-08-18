@@ -16,7 +16,7 @@ $block: '.faq';
         h3 {
             position: relative;
             padding: .5em;
-            @include icon("arrow-down", after);
+            @include icon("menu-arrow-down", after);
             &:after {
                 position: absolute;
                 right: 1%;
