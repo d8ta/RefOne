@@ -1,14 +1,19 @@
 $block: '.site-footer';
 #{$block} {
     &__table {
-display: table;
-    width: 100%;
-    margin-top: 0.75em;
-    margin-bottom: 2.75em;
+        position: relative;
+        display: table;
+        width: 100%;
+        margin-top: 0.75em;
+        margin-bottom: 2.75em;
+    }
+    &__nav  {
+        display: table-cell;
+        vertical-align: bottom;
     }
     &__logo {
-        display: table-cell;
-        padding-left: 12em;
+        position: absolute;
+        right: 0;
     }
     ul li {
         display: inline;
@@ -16,6 +21,5 @@ display: table;
     }
     nav {
         display: table-cell;
-
     }
 }
