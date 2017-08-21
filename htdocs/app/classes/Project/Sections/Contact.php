@@ -3,7 +3,7 @@ namespace Project\Sections;
 
 use A365\Wordpress\Helpers\Acf\FieldHelper;
 
-class ContactForm extends \A365\Wordpress\Block\AcfBlock {
+class Contact extends \A365\Wordpress\Block\AcfBlock {
 
 	protected $_template = 'contact-form';
 	protected static $_label = 'Kontaktformular';
