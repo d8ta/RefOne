@@ -19,11 +19,13 @@
 }
 
 .owl-nav {
-    padding: 2em 0 1.25em;
+    padding: 0;
     text-align: center;
     height: 100%;
-
-    z-index: 10;
+    position: absolute;
+    top: 41em;
+    right: 0;
+    left: 0;
 }
 
 .owl-prev,
