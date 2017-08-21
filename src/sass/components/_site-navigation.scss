@@ -3,10 +3,10 @@ $block: '.site-navigation';
     margin-top: 2.5em;
     margin-right: 1em;
     &__nav {
-            margin-right: -5em;
+        margin-right: -5em;
     }
-    &__toggler {
-        display: none;
+    ul {
+        width: 25em;
     }
     ul li {
         margin: 0;
