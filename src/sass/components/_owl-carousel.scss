@@ -1,5 +1,5 @@
 .owl-dots {
-    padding: 2em 0 1.25em;
+    padding: 5.5em 0 1.25em;
     text-align: center;
     background-color: $hobexDark;
 }
@@ -22,18 +22,13 @@
     padding: 0;
     text-align: center;
     height: 100%;
-    position: absolute;
-    top: 41em;
-    right: 0;
-    left: 0;
+    margin-top: -6em;
 }
 
 .owl-prev,
 .owl-next {
-
     display: inline;
     color: $color-white;
-
     .icon {
         font-size: em(32);
 
@@ -44,12 +39,13 @@
         }
     }
     @include mq($until: screen-sm) {
-        display: none;
+        visibility: hidden;
     }
 }
 
 .owl-prev {
-    padding-right: 16em;
+    padding-right: 40em;
+    position: absolute;
     .icon {
         @include icon(arrow-left);
     }
@@ -61,7 +57,7 @@
 }
 
 .owl-next {
-    padding-left: 16em;
+    padding-left: 40em;
     .icon {
         @include icon(arrow-right);
     }
