@@ -3,8 +3,8 @@ $block: '.welcome';
     margin-top: 6em;
     position: relative;
     &__img {
-        height: auto;
         width: 100%;
+        padding-bottom: 40.60%;
     }
     &__text {
         position: absolute;
@@ -36,6 +36,12 @@ $block: '.welcome';
         &__forth {
             width: 9.3em;
             margin-left: 2em;
+        }
+    }
+    @include mq($from: 1800px) {
+        &__img {
+            padding-bottom: 25%;
+             background-position: center top !important;
         }
     }
 }

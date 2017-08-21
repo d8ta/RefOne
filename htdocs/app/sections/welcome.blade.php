@@ -7,7 +7,7 @@
 ?>
 <div class="section">
 	<div class="welcome">
-		<img class="welcome__img" src="{{$bgimg}}" alt="Startseiten Bild">
+		<div class="welcome__img bg-image" style="background: url({{$bgimg}})"></div>
 		<div class="welcome__text h1-welcome section__content">
 			<div class="welcome__text__first">{{$firstline}}</div>
 			<div class="welcome__text__second">{{$secondline}}</div>
