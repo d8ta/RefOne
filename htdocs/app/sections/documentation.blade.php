@@ -17,7 +17,7 @@
 						<h2 class="documentation__headline headline-box-alt">{{$headline}}</h2>
 						<div class="documentation__text text-box-alt">{!!$text!!}</div>
 						<div class="documentation__button">
-							<a class="btn btn--medium" href="{{$btnurl}}">{{$btntext}}</a>	
+							<a class="btn btn--medium" href="https://hobex.docs.oppwa.com/tutorials/integration-guide" target="_blank">{{$btntext}}</a>	
 						</div>
 					</div>
 				</div>
