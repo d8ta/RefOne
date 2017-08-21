@@ -20,12 +20,8 @@ $block: '.intro';
         }
     }
     &__logos {
-        display: none;
-    }
-    @include mq($from: screen-sm) {
-        &__logos {
-            display: inline;
-        }
+        width: 100%;
+        max-width: 32em;
     }
 }
 
