@@ -2,6 +2,9 @@
     padding: 5.5em 0 1.25em;
     text-align: center;
     background-color: $hobexDark;
+    @include mq($until: screen-sm) {
+        padding: 7em 0 1.25em;
+    }
 }
 
 .owl-dot {
@@ -31,7 +34,6 @@
     color: $color-white;
     .icon {
         font-size: em(32);
-
         color: $color-white;
         transition: all .2s;
         &::before {
@@ -39,7 +41,7 @@
         }
     }
     @include mq($until: screen-sm) {
-        visibility: hidden;
+        display: none;
     }
 }
 
