@@ -16,7 +16,7 @@ $block: '.welcome';
         &__forth {
             background: rgba($hobexRot, 0.6);
             color: $color-white;
-            padding: em(2) em(5);
+            padding: .1em em(5) 0 em(5);
             margin-bottom: em(2);
             text-align: right;
         }
@@ -32,7 +32,7 @@ $block: '.welcome';
         &__third {
             width: 11em;
             margin-left: .25em;
-        }
+        } 
         &__forth {
             width: 9.3em;
             margin-left: 2em;

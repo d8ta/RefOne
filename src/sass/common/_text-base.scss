@@ -118,16 +118,14 @@ h6,
     text-transform: uppercase;
     max-width: 7.5em;
     margin: 0 auto;
-    // height: 4em;
     text-align: center;
 }
 
 %headline-box-alt {
     @extend %headline-box;
     font-size: em(30);
-    color: $color-black;
+    color: $hobexDark;
     max-width: 6.9em;
-    // line-height: 1.2;
 }
 
 %text-box {
