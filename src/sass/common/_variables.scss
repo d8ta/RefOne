@@ -22,11 +22,12 @@ $screen-md: 992px;
 $screen-lg: 1200px;
 $screen-xl: 1500px;
 $screen-xxl: 1900px;
-$side-padding: 15%;
+$side-padding: 10%;
 $mobile-padding: 10%;
 $height-header: 6em;
 $width-max-container: 1600px;
 $width-max-container-text: 1200px;
+$width-mobile-menu: 950px;
 $header-smaller: 600px;
 
 /* ======== SASS mq ======== */
@@ -38,7 +39,7 @@ $mq-breakpoints: (
     screen-lg: $screen-lg,
     screen-xl: $screen-xl,
     screen-xxl: $screen-xxl,
-    width-mobile-menu: 900px,
+    width-mobile-menu: $width-mobile-menu,
 	header-smaller: $header-smaller,
 );
 

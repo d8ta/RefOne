@@ -17,14 +17,14 @@ $block: '.site-header';
         float: left;
     }
     &__right {
-        // float: right;
-        
+        float: right;
+        padding-right: 10em;
     }
     &__lang-switch {
         position: absolute;
         right: .5em;
         top: 3.2em;
-        // display: none;
+        display: none;
         z-index: 100;
         font-size: 12px;
         @include mq($from: width-mobile-menu) {
