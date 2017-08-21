@@ -1,6 +1,8 @@
     $block: '.details';
     #{$block} {
+        max-width: $width-max-container-text;
         text-align: center;
+        margin: 0 auto;
         &__headline {
             line-height: 1.2;
             height: 3em;
