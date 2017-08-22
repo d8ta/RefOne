@@ -1,8 +1,8 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: \n"
-"POT-Creation-Date: 2017-08-22 16:13+0200\n"
-"PO-Revision-Date: 2017-08-22 16:14+0200\n"
+"POT-Creation-Date: 2017-08-22 17:47+0200\n"
+"PO-Revision-Date: 2017-08-22 17:47+0200\n"
 "Last-Translator: \n"
 "Language-Team: \n"
 "Language: de_DE\n"
@@ -25,6 +25,7 @@ msgid "Text"
 msgstr "Text"
 
 #: app/sections/contact-form.blade.php:50
+#: app/views/ajax/contact-form/feedback.blade.php:15
 msgid "Company"
 msgstr "Firmenname"
 
@@ -37,6 +38,7 @@ msgid "E-Mail*"
 msgstr "E-Mail*"
 
 #: app/sections/contact-form.blade.php:53
+#: app/views/ajax/contact-form/feedback.blade.php:16
 msgid "Phone"
 msgstr "Telefon"
 
@@ -57,24 +59,29 @@ msgid "Thank you for your request."
 msgstr "Vielen Dank für Ihre Nachricht."
 
 #: app/sections/contact-form.blade.php:72
+#: app/views/ajax/contact-form/feedback.blade.php:10
 msgid "We will contact you by the next working day."
 msgstr "Wir werden uns bis zum nächsten Werktag bei Ihnen melden."
 
-#: app/views/ajax/contact-form/feedback.blade.php:10
-msgid "Your Message"
-msgstr "Danke für Ihre Nachricht"
-
-#: app/views/ajax/contact-form/feedback.blade.php:11
+#: app/views/ajax/contact-form/feedback.blade.php:9
 msgid "Thank you for your message"
 msgstr "Danke für Ihre Nachricht"
 
-#: app/views/ajax/contact-form/feedback.blade.php:12
-msgid "We will respond as soon as possible."
-msgstr "Wir werden uns schnellstmögilch bei Ihnen melden."
+#: app/views/ajax/contact-form/feedback.blade.php:11
+msgid "Your data for checking"
+msgstr "Ihre Daten zur Kontrolle"
 
 #: app/views/ajax/contact-form/feedback.blade.php:13
-msgid "Best regards,"
-msgstr "Mit freundlichen Grüssen,"
+msgid "Your Message"
+msgstr "Danke für Ihre Nachricht"
+
+#: app/views/ajax/contact-form/feedback.blade.php:14
+msgid "Name"
+msgstr "Name"
+
+#: app/views/ajax/contact-form/feedback.blade.php:17
+msgid "Email"
+msgstr "E-Mail"
 
 #: app/views/components/alerts/browser-incompatible.blade.php:5
 msgid "You are using an incompatible browser."
@@ -112,3 +119,9 @@ msgstr "Ich bin einverstanden"
 #: wp-content/themes/hobexonline/searchform.php:2
 msgid "Search"
 msgstr "Suche"
+
+#~ msgid "We will respond as soon as possible."
+#~ msgstr "Wir werden uns schnellstmögilch bei Ihnen melden."
+
+#~ msgid "Best regards,"
+#~ msgstr "Mit freundlichen Grüssen,"
