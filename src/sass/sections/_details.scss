@@ -3,19 +3,28 @@
         max-width: $width-max-container-text;
         text-align: center;
         margin: 0 auto;
+        margin-top: -3em;
         &__headline {
             line-height: 1.2;
-            height: 3em;
+            height: 2.75em;
         }
-
+        &__text {
+            p {
+                margin-bottom: 0;
+            }
+        }
         &__box {
             display: block;
             vertical-align: top;
             margin-top: 4em;
             height: auto;
+            &__icon {
+                padding-bottom: 2em;
+            }
             i {
                 font-size: 8em;
                 color: $hobexDarkGrey;
+                vertical-align: bottom;
             }
         }
         @include mq($from: $screen-xs + 50) {
@@ -25,7 +34,7 @@
                 padding-right: 1em;
                 width: 49%;
                 text-align: center;
-                margin-top: 1em;
+                margin-top: -.8em;
             }
         }
         @include mq($from: $screen-sm + 42) {
