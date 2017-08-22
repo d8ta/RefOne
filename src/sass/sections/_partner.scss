@@ -1,5 +1,7 @@
     $block: '.partner';
     #{$block} {
+            max-width: 67em;
+    margin: rem(90) auto;
         &__break-one {
             display: inline;
         }
@@ -32,7 +34,7 @@
             &__inner {
                 width: 24%;
             }
-                        &__break-two {
+            &__break-two {
 
                 display: none;
             }
