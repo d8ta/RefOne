@@ -1,20 +1,23 @@
 $block: '.slider';
+$max-width-slider-image: 1280px;
 #{$block} {
     &__slide {
         &__image {
             padding-bottom: 37.5%;
             background: $hobexDark;
-            background-repeat: no-repeat;
-            background-size: cover;
-            background-position: center center;
+            max-width: $max-width-slider-image;
+            margin: 0 auto;
         }
         &__text {
             color: $color-white;
             text-align: center;
+            font-weight: bold;
         }
         &__headline {
             text-align: center;
             padding-top: 1em;
+            padding-bottom: .4em;
+            text-transform: uppercase;
         }
     }
 }

@@ -1,9 +1,9 @@
 <?php
 $config = [
 	"mail" => [
-		"from" => getenv('MAIL_FROM')?:'selber@kontexten.org',
-		"to" => getenv('MAIL_TO')?:'selber@kontexten.org',
-		"transport" => getenv('MAIL_TRANSPORT')?:'smtp',
+		"from" => getenv('MAIL_FROM'),
+		"to" => getenv('MAIL_TO'),
+		"transport" => getenv('MAIL_TRANSPORT') ? : 'smtp',
 		'smtp' => [
 			'host' => getenv('SMTP_HOST'),
 			'port' => getenv('SMTP_PORT'),

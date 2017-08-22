@@ -2,8 +2,9 @@ $block: '.documentation';
 $documentation-margin: em(40);
 #{$block} {
     &__inner {
-        margin-bottom: 2em;
         width: 100%;
+        margin: 0 auto 2em auto;
+        max-width: 76em;
     }
     &__headline,
     &__text {
@@ -20,7 +21,7 @@ $documentation-margin: em(40);
         padding-bottom: 8.25em;
         margin-bottom: 2em;
         vertical-align: top;
-        background: $hobexDarkGrey;
+        background: $box-grey;
         position: relative;
         &__inner {
             padding: .5em;
@@ -29,10 +30,11 @@ $documentation-margin: em(40);
     }
     &__text {
         max-width: 18em;
-        padding-top: 1em;
+        padding-top: .5em;
         padding-left: 1em;
         padding-right: 1em;
         text-align: center;
+        font-weight: normal;
         p {
             margin-bottom: 1.8em;
         }
