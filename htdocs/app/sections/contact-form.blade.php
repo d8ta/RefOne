@@ -68,7 +68,8 @@ $formHelper = Project\Helpers\FormHelper::getInstance();
                     </div>
                 </div>
                 <div class="form__success">
-                    <h3 class="h3"><?php echo __('Thank you for your message.'); ?></h3>
+                    <div class="text-base-dark"><?php echo __('Thank you for your request.'); ?></div>
+                    <div class="text-base-dark"><?php echo __('We will contact you by the next working day.'); ?></div>
                 </div>
             </form>
         </div>

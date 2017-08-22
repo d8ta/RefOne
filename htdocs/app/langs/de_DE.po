@@ -1,8 +1,8 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: \n"
-"POT-Creation-Date: 2017-08-16 09:43+0200\n"
-"PO-Revision-Date: 2017-08-16 09:44+0200\n"
+"POT-Creation-Date: 2017-08-22 16:13+0200\n"
+"PO-Revision-Date: 2017-08-22 16:14+0200\n"
 "Last-Translator: \n"
 "Language-Team: \n"
 "Language: de_DE\n"
@@ -20,41 +20,45 @@ msgstr ""
 msgid "Your Request"
 msgstr "Ihre Kontaktanfrage"
 
-#: app/classes/Project/Helpers/FormHelper.php:38
+#: app/classes/Project/Helpers/FormHelper.php:41
 msgid "Text"
 msgstr "Text"
 
-#: app/sections/contact-form.blade.php:24
+#: app/sections/contact-form.blade.php:50
 msgid "Company"
 msgstr "Firmenname"
 
-#: app/sections/contact-form.blade.php:25
-msgid "Name"
-msgstr "Name"
+#: app/sections/contact-form.blade.php:51
+msgid "Name*"
+msgstr "Name*"
 
-#: app/sections/contact-form.blade.php:26
-msgid "E-Mail"
-msgstr "E-Mail"
+#: app/sections/contact-form.blade.php:52
+msgid "E-Mail*"
+msgstr "E-Mail*"
 
-#: app/sections/contact-form.blade.php:27
+#: app/sections/contact-form.blade.php:53
 msgid "Phone"
 msgstr "Telefon"
 
-#: app/sections/contact-form.blade.php:28
+#: app/sections/contact-form.blade.php:54
 msgid "Message"
 msgstr "Bemerkung"
 
-#: app/sections/contact-form.blade.php:34
+#: app/sections/contact-form.blade.php:60
 msgid "Required"
 msgstr "Pflichtfelder"
 
-#: app/sections/contact-form.blade.php:40
+#: app/sections/contact-form.blade.php:66
 msgid "Send Form"
 msgstr "Nehmen Sie jetzt Kontakt mit uns auf"
 
-#: app/sections/contact-form.blade.php:45
-msgid "Thank you for your message."
-msgstr "Danke für Ihre Nachricht."
+#: app/sections/contact-form.blade.php:71
+msgid "Thank you for your request."
+msgstr "Vielen Dank für Ihre Nachricht."
+
+#: app/sections/contact-form.blade.php:72
+msgid "We will contact you by the next working day."
+msgstr "Wir werden uns bis zum nächsten Werktag bei Ihnen melden."
 
 #: app/views/ajax/contact-form/feedback.blade.php:10
 msgid "Your Message"
