@@ -1,6 +1,7 @@
     $block: '.partner';
     #{$block} {
-            max-width: 67em;
+    max-width: $width-max-container-text;
+    // max-width: 67em;
     margin: rem(90) auto;
         &__break-one {
             display: inline;
