@@ -1,9 +1,12 @@
 $block: '.products';
+$max-width-boxes: 1400px;
 #{$block} {
-    // max-width: $width-max-container-text;
+    max-width: $max-width-boxes; 
     text-align: center;
-    margin-left: -2em;
-    margin-right: -2em;
+    // margin-left: -2em;
+    // margin-right: -2em;
+    margin: 0 auto 4.5rem auto;
+
     &__button {
         padding-top: 1em;
         padding-bottom: 1em;

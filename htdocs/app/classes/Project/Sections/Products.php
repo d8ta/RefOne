@@ -15,7 +15,7 @@ class Products extends \A365\Wordpress\Block\AcfBlock {
 	{
 		return [
 			FieldHelper::createText('title', 'Sektionstitel')->setRequired(),
-			FieldHelper::createRepeater('boxes', 'Boxes', ["min" => 4, "max" => 4])
+			FieldHelper::createRepeater('boxes', 'Boxes', ["min" => 1, "max" => 4])
 				->addSubfields([
 					FieldHelper::createText('icon', 'Iconname'),
 					FieldHelper::createText('headline', 'Überschrift')->setRequired(),
