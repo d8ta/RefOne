@@ -16,7 +16,7 @@ $block: '.btn';
 
     &--medium {
         @include mq($from: $screen-md + 150px) {
-            padding: 1em 3.9em;
+            padding: .9em 3.9em;
         }
         font-size: 1.3em;
     }
