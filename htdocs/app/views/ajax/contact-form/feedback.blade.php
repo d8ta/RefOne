@@ -23,7 +23,7 @@ $label_email = __('Email');
 <head>
 	<title></title>
 </head>
-<body style="background-color: lightgrey;">
+<body style="background: #eff2f3;">
 	<table style="margin: 3em auto; background: white; padding: 3em; width: 35em;">
 		<thead>
 			<tr>
@@ -61,7 +61,7 @@ $label_email = __('Email');
 
 	<table>
 		<tr>
-		   <p style="text-align: center;""><small>hobex AG, Josef-Brandstätter-Straße 2b, 5020 Salzburg, +43 662 2255-0, <a href="mailto:office@hobex.at">office@hobex.at</a>, <a href="http://www.hobex.at">www.hobex.at</a></small></p>
+		   <p style="text-align: center;"><small>hobex AG, Josef-Brandstätter-Straße 2b, 5020 Salzburg, +43 662 2255-0, <a href="mailto:office@hobex.at">office@hobex.at</a>, <a href="http://www.hobex.at">www.hobex.at</a></small></p>
 		</tr>
 	</table>  
 	
