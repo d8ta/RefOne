@@ -7,18 +7,14 @@
             line-height: 1.2;
             height: 3em;
         }
-        &__text {
-            p {
-                margin-bottom: 1.6em;
-            }
-        }
+
         &__box {
             display: block;
             vertical-align: top;
             margin-top: 4em;
             height: auto;
             i {
-                font-size: 6em;
+                font-size: 8em;
                 color: $hobexDarkGrey;
             }
         }
