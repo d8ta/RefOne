@@ -7,7 +7,6 @@
     //= include ../bower_components/owl.carousel/dist/owl.carousel.min.js
     //= include ../bower_components/velocity/velocity.min.js
     //= include ../bower_components/js-cookie/src/js.cookie.js
-    //= include ../bower_components/matchHeight/dist/jquery.matchHeight-min.js
 
     //= include vendor/jquery.lazyloadxt.js
 
@@ -22,7 +21,6 @@
     //= include modules/AccordionController.js
     //= include modules/OwlcarouselController.js
     //= include modules/Owlcarousel.js
-    //= include modules/MatchHeightController.js
     //= include modules/AjaxFormController.js
     //= include modules/LanguageSwitch.js
     //= include modules/Page.js
@@ -40,7 +38,6 @@
     application
         .addModule(new AccordionController(), 'accordionController')
         .addModule(new OwlcarouselController(), 'owlcarouselcontroller')
-        .addModule(new MatchHeightController(), 'MatchHeightController')
         .addModule(new AjaxFormController(), 'ajaxFormController')
         .addModule(new LanguageSwitch(), 'LanguageSwitch')
         .addModule(new Page(), 'Page')
