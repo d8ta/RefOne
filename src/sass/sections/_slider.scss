@@ -11,10 +11,13 @@ $max-width-slider-image: 1280px;
         &__text {
             color: $color-white;
             text-align: center;
+            font-weight: bold;
         }
         &__headline {
             text-align: center;
             padding-top: 1em;
+            padding-bottom: .4em;
+            text-transform: uppercase;
         }
     }
 }
