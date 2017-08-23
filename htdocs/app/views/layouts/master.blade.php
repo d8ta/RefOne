@@ -16,8 +16,7 @@
             @include('components.footer')
 
         </div>
-
-       
+        @include('components.sidebar.sidebar')
         @include('components.html.foot')
     </body>
 </html>

@@ -127,9 +127,9 @@ Sidebar.prototype.closeSidebar = function() {
     delay = 300;
 
     /*} else{
-    	method = 'addClass';
-    	this.toggleListener(true);
-    	fixSite = true;
+        method = 'addClass';
+        this.toggleListener(true);
+        fixSite = true;
     };*/
 
     if (delay) {
