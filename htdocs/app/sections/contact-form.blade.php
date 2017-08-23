@@ -7,8 +7,6 @@ $intro = $block->getText();
 $closer = $block->getCloser();
 $iconleft = $block->getIconleft();
 $iconright = $block->getIconright();
-$textleft = $block->getTextleft();
-$textright = $block->getTextright();
 $logo = Project\Application::getInstance()->getConfig('media.logo');
 
 
@@ -29,7 +27,9 @@ $formHelper = Project\Helpers\FormHelper::getInstance();
                         <i class="icon icon-{{$iconleft}}"></i>
                     </div>
                     <div class="contact-label">TEL.</div>
-                    <div class="contact__iconboxes__box__text text-base-dark">{!!$textleft!!}</div>
+                    <div class="contact__iconboxes__box__text text-base-dark">
+                        <a href="tel:+436622255333">+43 662 2255-333</a>
+                    </div>
                 </div>
                 <div class="contact__iconboxes__box">
                     <div class="contact__iconboxes__box__icon">
@@ -37,7 +37,7 @@ $formHelper = Project\Helpers\FormHelper::getInstance();
                     </div>
                     <div class="contact-label">E-MAIL</div>
                     <div class="contact__iconboxes__box__text text-base-dark">
-                        <a href="mailto:vertrieb@hobex.at" target="_top">{!!$textright!!}</a>
+                        <a href="mailto:vertrieb@hobex.at" target="_top">vertrieb@hobex.at</a>
                     </div>
                 </div>
             </div>

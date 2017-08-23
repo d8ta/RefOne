@@ -19,8 +19,6 @@ class Contact extends \A365\Wordpress\Block\AcfBlock {
 			FieldHelper::createWYSIWYG('closer', 'Ende')->setRequired(),
 			FieldHelper::createText('iconleft', 'Iconname links'),
 			FieldHelper::createText('iconright', 'Iconname rechts'),
-			FieldHelper::createWYSIWYG('textleft', 'Text links')->setRequired(),
-			FieldHelper::createWYSIWYG('textright', 'Text rechts')->setRequired(),
 		];
 	}
 }
