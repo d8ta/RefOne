@@ -1,10 +1,9 @@
 <?php
-$menuHelper = \Project\Helpers\MenuHelper::getInstance();
-$nav_items  = $menuHelper->getMenuItems('primary');
+$menuHelper = \A365\Wordpress\Helpers\MenuHelper::getInstance();
+$items      = $menuHelper->getMenuItems('primary');
+$level = 1;
 ?>
 {{-- Navigation --}}
-<nav class="navigation sidebar-navigation js-nested-navigation">
-    <ul class="level-1">
-	    @each("components.navigation.item", $nav_items, 'nav_item')
-	</ul>
+<nav class="navigation navigation--sidebar">
+    @include("components.sidebar.navigation-inner")
 </nav>
