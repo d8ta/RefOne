@@ -12,8 +12,8 @@ $options = array(
 
 		@include('components.sidebar.navigation')
 
+	</div>
 		<div class="sidebar__lang-switch">
     		@include('components.header.language-switch')
     	</div>
-	</div>
 </aside>

@@ -21,10 +21,10 @@ $block: '.site';
     body.sidebar-open & {
         transform: translateX(-100%);
         @include mq($from: screen-xs) {
-            transform: translateX(-70%);
+            transform: translateX(-100%);
         }
         @include mq($from: screen-sm) {
-            transform: translateX(-50%);
+            transform: translateX(-100%);
         }
         @include mq($from: width-mobile-menu) {
             transform: translateX(0);
