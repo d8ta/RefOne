@@ -12,7 +12,7 @@ $block: '.site-navigation';
         margin: 0;
         padding-left: 1em;
         padding-bottom: 2.75em;
-        float: right;
+        display: inline-block;
         text-transform: uppercase;
         font: em(16) $font-normal;
         font-weight: 400;
