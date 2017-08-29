@@ -19,6 +19,7 @@ class Intro extends \A365\Wordpress\Block\AcfBlock {
 			FieldHelper::createText('subline', 'Unterüberschrift'),
 			FieldHelper::createWYSIWYG('text', 'Text')->setRequired(),
 			FieldHelper::createImageCrop('logos', 'Logos', ["crop_type" => "hard", 'target_size' => 'custom', 'force_crop' => 'no', 'save_format' => 'url', "width" => 1600, "height" => 650]),
+			FieldHelper::createImageCrop('mobilelogos', 'Mobile Logos', ["crop_type" => "hard", 'target_size' => 'custom', 'force_crop' => 'no', 'save_format' => 'url', "width" => 1600, "height" => 650]),
 			FieldHelper::createPageLink('btnurl', 'Button Link'),
 			FieldHelper::createText('btntext', 'Button Text'),
 		];

@@ -20,6 +20,19 @@ $block: '.intro';
     &__logos {
         width: 100%;
         max-width: 32em;
+        display: none;
+    }
+    &__mobilelogos {
+        width: 100%;
+        max-width: 32em;
+    }
+    @include mq($from: screen-sm) {
+        &__logos {
+            display: inline;
+        }
+        &__mobilelogos {
+            display: none;
+        }
     }
 }
 

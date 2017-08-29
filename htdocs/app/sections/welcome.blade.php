@@ -11,8 +11,8 @@
 		<div class="welcome__text h1-welcome section__content">
 			<div class="welcome__text__first">{{$firstline}}</div>
 			<div class="welcome__text__second">{{$secondline}}</div>
-			<div class="welcome__text__third">{{$thirdline}}</div>
-			<div class="welcome__text__forth">{{$forthline}}</div>
+{{-- 			<div class="welcome__text__third">{{$thirdline}}</div>
+			<div class="welcome__text__forth">{{$forthline}}</div> --}}
 		</div>
 	</div>
 </div>
