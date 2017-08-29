@@ -21,18 +21,19 @@ $block: '.welcome';
             text-align: right;
         }
         &__first {
-            width: 11.25em;
+            width: 9.25em;
             font-weight: bold;
+            margin-left: 3em;
         }
         &__second {
-            width: 9.25em;
+            width: 10.25em;
             text-align: right;
             margin-left: 2em;
         }
         &__third {
             width: 11em;
             margin-left: .25em;
-        } 
+        }
         &__forth {
             width: 9.3em;
             margin-left: 2em;
@@ -41,7 +42,7 @@ $block: '.welcome';
     @include mq($from: 1800px) {
         &__img {
             padding-bottom: 25%;
-             background-position: center top !important;
+            background-position: center top !important;
         }
     }
 }

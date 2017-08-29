@@ -15,10 +15,10 @@ class Welcome extends \A365\Wordpress\Block\AcfBlock {
 	{
 		return [
 				FieldHelper::createImageCrop('background', 'Hintergrund', ["crop_type" => "hard", 'target_size' => 'custom', 'force_crop' => 'no', 'save_format' => 'url', "width" => 490, "height" => 45])->setRequired(),
-				FieldHelper::createText('firstline', 'erste Textzeile')->setRequired(),
-				FieldHelper::createText('secondline', 'zweite Textzeile')->setRequired(),
-				FieldHelper::createText('thirdline', 'dritte Textzeile')->setRequired(),
-				FieldHelper::createText('forthline', 'dritte Textzeile')->setRequired(),
+				FieldHelper::createText('firstline', 'erste Textzeile'),
+				FieldHelper::createText('secondline', 'zweite Textzeile'),
+				FieldHelper::createText('thirdline', 'dritte Textzeile'),
+				FieldHelper::createText('forthline', 'dritte Textzeile'),
 		];
 	}
 }
