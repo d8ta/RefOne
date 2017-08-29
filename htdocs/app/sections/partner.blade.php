@@ -3,6 +3,7 @@
 ?>
 <div class="partner__outer-container">
 	<div class="partner__container">
+	<div class="h1">Technologiepartner</div>
 		@foreach ($partners as $partner)
 		<?php
 			$img = $partner['image'];
