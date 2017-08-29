@@ -1,5 +1,9 @@
 $block: '.faq';
 #{$block} {
+    &__content {
+        max-width: $width-max-container-text;
+        margin: 0 auto; 
+    }
     &__logobox {
         margin: 0 auto 2em auto;
         border-spacing: 2em 0;
@@ -18,10 +22,11 @@ $block: '.faq';
             padding: .5em;
             @include icon("menu-arrow-down", after);
             &:after {
+                @extend %icon;
                 position: absolute;
                 right: 1%;
-                top: 0.5em;
-                color: red;
+                top: 1em;
+                color: $hobexRot;
                 font-size: em(12);
             }
         }
