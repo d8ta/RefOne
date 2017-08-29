@@ -109,9 +109,24 @@ h6,
 %text-base {
     font-family: $font-normal;
     line-height: 1.4;
-    font-size: em(24);
+    font-size: em(16);
     font-weight: bold;
     color: $color-text;
+    @include mq($from: screen-sm) {
+        font-size: em(18);
+    }
+
+    @include mq($from: screen-md) {
+        font-size: em(20);
+    }
+
+    @include mq($from: screen-lg) {
+        font-size: em(22);
+    }
+
+    @include mq($from: screen-xl) {
+        font-size: em(24);
+    }
 }
 
 %text-base-dark {
@@ -153,7 +168,7 @@ h6,
 %faq-headline {
     @extend %h3;
     font-size: 1.15em;
-    font-weight: bold;  
+    font-weight: bold;
 }
 
 %faq {
