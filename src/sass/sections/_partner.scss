@@ -1,5 +1,8 @@
 $block: '.partner';
 #{$block} {
+    &__border {
+        border-color: $border-color;
+    }
     &__outer-container {
         overflow: hidden;
         margin: em(50) auto em(100);
@@ -18,7 +21,7 @@ $block: '.partner';
         &--black {
             margin: em(80) auto em(50);
             &:after {
-                background-color: grey;
+                background-color: $nav-grey;
             }
         }
     }
@@ -36,7 +39,7 @@ $block: '.partner';
     border-image: none;
     border-width: 0px 1px 1px 0px;
     &--black {
-        border-color: grey;
+        border-color: $nav-grey;
     }
     &__pusher {
         padding-bottom: 67.5676%;
