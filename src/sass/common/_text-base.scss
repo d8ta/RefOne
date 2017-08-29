@@ -22,23 +22,9 @@ h6,
     line-height: 1.2em;
     font-weight: bold;
     text-transform: uppercase;
-    font-size: em(30);
+    font-size: em(60);
     text-align: center;
     color: $color-text;
-    @include mq($from: screen-sm) {
-        font-size: em(42);
-        display: inline;
-    }
-    @include mq($from: screen-md) {
-        font-size: em(50);
-        display: inline;
-    }
-    @include mq($from: screen-lg) {
-        font-size: em(54);
-    }
-    @include mq($from: screen-xl) {
-        font-size: em(60);
-    }
 }
 
 %h1-dark {
@@ -94,7 +80,7 @@ h6,
 %h4 {
     @extend %text-base-dark;
     font-size: 1.6em;
-    font-weight: bold;
+    font-weight: bold;    
 }
 
 %h5 {
