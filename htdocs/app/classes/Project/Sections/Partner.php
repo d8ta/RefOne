@@ -5,7 +5,7 @@ use A365\Wordpress\Helpers\Acf\FieldHelper;
 
 class Partner extends \A365\Wordpress\Block\AcfBlock {
 
-	protected $_template = 'Partner';
+	protected $_template = 'partner';
 	protected static $_label = 'Partner Sektion';
 
 	/**

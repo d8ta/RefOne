@@ -39,6 +39,14 @@
     @extend %text-base !optional;
 }
 
+.faq-headline {
+    @extend %faq-headline !optional;
+}
+
+.faq {
+    @extend %faq !optional;
+}
+
 .contact-label {
     @extend %contact-label !optional;
 }
