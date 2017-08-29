@@ -4,7 +4,7 @@
             <div class="faq__content">
                 <div class="faq__logobox">
                     <h2 class="faq__logobox__headline h1">FAQ</h2>
-                    <img class="faq__logobox__logo" src="assets/images/layout/hobex_logo.png" alt="logo"> 
+                    {{-- <img class="faq__logobox__logo" src="assets/images/layout/hobex_logo.png" alt="logo">  --}}
                 </div>
                 <div class="faq js-accordion">
 
