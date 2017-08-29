@@ -16,8 +16,6 @@ $block: '.faq';
         margin-bottom: .75em;
         border-bottom: 1px solid $hobexGrey;
         background: $hobexGrey;
-                padding-right: 1em;
-
         &__text {
             padding: 1em;
 
@@ -26,6 +24,7 @@ $block: '.faq';
         h3 {
             position: relative;
             padding: .5em;
+            padding-right: 1em;
             @include icon("menu-arrow-down", after);
             &:after {
                 @extend %icon;
@@ -45,7 +44,7 @@ $block: '.faq';
             }
         }
     }
-    .js-accordion__itemjs-accordion__item {
+    .js-accordion__item {
         transition: all 0.3s;
         padding: 0.9em 0.8em 0.3em 0.8em;
         &__text {
