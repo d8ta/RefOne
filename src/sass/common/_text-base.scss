@@ -22,9 +22,24 @@ h6,
     line-height: 1.2em;
     font-weight: bold;
     text-transform: uppercase;
-    font-size: em(60);
+    font-size: em(32);
     text-align: center;
     color: $color-text;
+    @include mq($from: screen-sm) {
+        font-size: em(40);
+    }
+
+    @include mq($from: screen-md) {
+        font-size: em(48);
+    }
+
+    @include mq($from: screen-lg) {
+        font-size: em(54);
+    }
+
+    @include mq($from: screen-xl) {
+        font-size: em(60);
+    }
 }
 
 %h1-dark {
@@ -80,7 +95,7 @@ h6,
 %h4 {
     @extend %text-base-dark;
     font-size: 1.6em;
-    font-weight: bold;    
+    font-weight: bold;
 }
 
 %h5 {
@@ -138,7 +153,7 @@ h6,
 %faq-headline {
     @extend %h3;
     font-size: 1.15em;
-    font-weight: bold;
+    font-weight: bold;  
 }
 
 %faq {

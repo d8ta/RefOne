@@ -14,7 +14,7 @@
                         </div>
                         <div class="js-accordion__item__text faq__item__text">
                             <ol>
-                               <li>Ja unser Partner Customweb bietet fertige Plugins für die gängigsten Shopsysteme an. Sie finden die verfügbaren Plugins hier: <a href="https://hobex.docs.oppwa.com/tutorials/plugins"> https://hobex.docs.oppwa.com/tutorials/plugins</li></a>
+                               <li>Ja unser Partner Customweb bietet fertige Plugins für die gängigsten Shopsysteme an. Sie finden die verfügbaren Plugins hier: <a href="https://hobex.docs.oppwa.com/tutorials/plugins"> Plugins</li></a>
                             </ol>
                         </div>
                     </div>
@@ -26,7 +26,7 @@
                         <div class="js-accordion__item__text faq__item__text">
                             <ol>
                                <li>Ja, die Seamlessintegration fügt sich nahtlos in das bestehende Design ein,  es stehen Ihnen alle Gestaltungsmöglichkeit offen.
-                                Eine Dokumentation für die Anpassungsmöglichkeiten finden Sie hier: <a href="https://hobex.docs.oppwa.com/tutorials/integration-guide/customisation"> https://hobex.docs.oppwa.com/tutorials/integration-guide/customisation</li></a>
+                                Eine Dokumentation für die Anpassungsmöglichkeiten finden Sie hier: <a href="https://hobex.docs.oppwa.com/tutorials/integration-guide/customisation"> Customisation</li></a>
                             </ol>
                         </div>
                     </div>
