@@ -1,13 +1,13 @@
 $block: '.slider';
 $max-width-slider-image: 1280px;
 #{$block} {
+    &__image {
+        padding-bottom: 37.5%;
+        background: $hobexDark;
+        max-width: $max-width-slider-image;
+        margin: 0 auto;
+    }
     &__slide {
-        &__image {
-            padding-bottom: 37.5%;
-            background: $hobexDark;
-            max-width: $max-width-slider-image;
-            margin: 0 auto;
-        }
         &__text {
             color: $color-white;
             text-align: center;
