@@ -21,9 +21,8 @@ $block: '.welcome';
             text-align: right;
         }
         &__first {
-            width: 9.25em;
-            font-weight: bold;
-            margin-left: 3em;
+            width: 11.25em;
+            margin-left: 1em;
         }
         &__second {
             width: 10.25em;
@@ -34,6 +33,7 @@ $block: '.welcome';
             width: 11em;
             margin-left: .25em;
         }
+
         &__forth {
             width: 9.3em;
             margin-left: 2em;
