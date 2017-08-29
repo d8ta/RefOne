@@ -2,9 +2,9 @@
 	$title = $block->getTitle();
 	$boxes = $block->getBoxes();
 ?>
-<div class="section-products">
+<div class="section">
 	<div class="section__content">
-		<div class="products section--margin">
+		<div class="products section section--margin">
 			<div class="products__title h1">{{$title}}
 			</div>
 			@foreach ($boxes as $box)

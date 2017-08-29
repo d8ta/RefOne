@@ -1,4 +1,4 @@
-<div class=" section section--margin">
+<div class="section section--margin">
     <div class="section__content">
         <div class="faq">
             <div class="faq__content">

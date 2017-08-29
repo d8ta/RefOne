@@ -1,7 +1,7 @@
 <?php
 	$boxes = $block->getBoxes();
 ?>
-<div class="section--dark section--padding">
+<div class="section section--dark section--padding">
 	<div class="section__content">
 		<div class="documentation">
 		<div class="documentation__inner">
