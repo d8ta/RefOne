@@ -10,6 +10,9 @@
 				<div class="site-footer__logo">
 					<img class="site-footer__logo" src="assets/images/layout/paymentlogo.png" alt="Payment Logo">
 				</div>
+				<div class="site-footer__mobile">
+					<img class="site-footer__mobile" src="assets/images/layout/mobilepaymentlogo.png" alt="Payment Logo mobile">
+				</div>
 			</div>
 		</div>
 	</div>
