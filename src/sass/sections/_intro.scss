@@ -4,8 +4,7 @@ $block: '.intro';
     margin-bottom: rem(60);
     text-align: center;
     a {
-        display: block;
-        max-width: 23em;
+        display: inline-block;
         margin: 0 auto;
         margin-top: 1.2em;
     }
@@ -19,7 +18,7 @@ $block: '.intro';
     }
     &__logos {
         width: 100%;
-        max-width: 32em;
+        max-width: em(800);
         display: none;
     }
     &__mobilelogos {
