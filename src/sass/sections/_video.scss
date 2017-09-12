@@ -1,0 +1,21 @@
+$block: ".video";
+#{$block} {
+    width: 100%;
+    max-width: $width-max-container-video;
+    max-height: $width-height-container-video;
+    margin: 0 auto;
+    &__content {
+        position: relative;
+        padding-bottom: 56%;
+        margin: 0 auto;
+        height: 0;
+
+        >iframe {
+            position: absolute;
+            left: 0;
+            top: 0;
+            height: 100%;
+            width: 100%;
+        }
+    }
+}

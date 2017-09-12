@@ -1,6 +1,5 @@
 function Owlcarousel($element) {
     this.elements.owl = $element;
-    this.elements.owl.find(".js-owl-item").shuffle();
     this.init();
 
     return {};
@@ -45,12 +44,12 @@ Owlcarousel.prototype.options = {
     responsiveClass: true,
     responsivetype: 0,
     responsive: undefined,
-    animateIn: undefined,
-    animateOut: undefined,
+    animateIn: true,
+    animateOut: false,
     smartSpeed: 200,
     slideBy: 2,
-    navSpeed: 100,
-    dotsSpeed: 100,
+    navSpeed: 500,
+    dotsSpeed: 500,
     touchDrag: true,
     mouseDrag: false,
     navText: [

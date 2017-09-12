@@ -1,0 +1,47 @@
+    $block: '.details';
+    #{$block} {
+        max-width: $width-max-container-text;
+        text-align: center;
+        margin: 0 auto;
+        margin-top: -3em;
+        &__headline {
+            line-height: 1.2;
+            height: 2.75em;
+            margin-top: .9em;
+        }
+        &__text {
+            p {
+                margin-bottom: 0;
+            }
+        }
+        &__box {
+            display: block;
+            vertical-align: top;
+            margin-top: 4em;
+            height: auto;
+            &__icon {
+                padding-bottom: 0;
+                margin-bottom: -2em;
+                margin-top: 2.75em;
+            }
+            i {
+                font-size: 8em;
+                color: $hobexDarkGrey;
+            }
+        }
+        @include mq($from: $screen-xs + 50) {
+            &__box {
+                display: inline-block;
+                padding-left: 1em;
+                padding-right: 1em;
+                width: 49%;
+                text-align: center;
+                margin-top: -.8em;
+            }
+        }
+        @include mq($from: $screen-sm + 42) {
+            &__box {
+                width: 32%;
+            }
+        }
+    }

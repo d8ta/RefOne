@@ -9,16 +9,23 @@ $block: ".section";
             padding-right: 0;
         }
     }
-    
+
     &--margin {
-        margin: rem(60) 0;
+        margin: 4rem 0;
+    }
+    &--padding {
+        padding: rem(60) 0;
     }
     &__content {
         margin: 0 auto;
-        padding-left: $side-padding;
-        padding-right: $side-padding;
+        padding-left: $mobile-padding;
+        padding-right: $mobile-padding;
         box-sizing: content-box;
         max-width: $width-max-container;
+        @include mq($from: screen-xs) {
+            padding-right: $side-padding;
+            padding-left: $side-padding;
+        }
         @include clearfix;
         &--inner {
             max-width: em($width-max-container-text);
@@ -30,12 +37,16 @@ $block: ".section";
         margin-right: auto;
         display: block;
     }
-    /* &--bg-grey {
-        background: $color-bg-grey;
-    }*/
+
+    &--intro {
+        background: $hobexGrey;
+    }
+
+    &--dark {
+        background: $hobexDark;
+    }
 }
 
 #{$block}-container {
     position: relative;
-    
 }

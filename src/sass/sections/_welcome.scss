@@ -1,0 +1,48 @@
+$block: '.welcome';
+#{$block} {
+    margin-top: 6em;
+    position: relative;
+    &__img {
+        width: 100%;
+        padding-bottom: 25%;
+        background-position: center top !important; // padding-bottom: 40.60%;
+    }
+    &__text {
+        position: absolute;
+        top: 1.5em;
+        right: 0;
+        &__first,
+        &__second,
+        &__third,
+        &__forth {
+            background: rgba($hobexRot, 0.6);
+            color: $color-white;
+            padding: .1em em(5) 0 em(5);
+            margin-bottom: em(2);
+            text-align: right;
+        }
+        &__first {
+            width: 11.25em;
+            margin-left: 1em;
+        }
+        &__second {
+            width: 10.25em;
+            text-align: right;
+            margin-left: 2em;
+        }
+        &__third {
+            width: 11em;
+            margin-left: .25em;
+        }
+
+        &__forth {
+            width: 9.3em;
+            margin-left: 2em;
+        }
+    }
+}
+
+
+}
+
+}

@@ -15,11 +15,12 @@ use Valitron\Validator;
 class ContactForm extends Action
 {
 
-	const KEY_HONEYPOT = 't_NT2GxLPEkcNmV';
+	const KEY_HONEYPOT = 't_NT2GxLPEkcNmZ';
 
 	protected function _action()
 	{
-		$data     = $_POST['form'];
+
+		$data = $_POST['form'];
 		$response = new \stdClass;
 
 		if (strlen($data[self::KEY_HONEYPOT]) > 0) {
@@ -27,15 +28,16 @@ class ContactForm extends Action
 			return $response;
 		}
 
+		
+
 		load_theme_textdomain( 'default', ABSPATH . 'app/langs' );
 		
 		$label_subject = __('Your Request');
 
-		$companySubject = 'EAS - Neue Kontaktanfrage';
+		$companySubject = 'Hobex - Neue Kontaktanfrage';
 		$companyView = 'ajax.contact-form.company';
-		$feedbackSubject = 'EAS - ' . $label_subject;
+		$feedbackSubject = 'Hobex - ' . $label_subject;
 		$feedbackView = 'ajax.contact-form.feedback';
-		
 
 		try {
 
@@ -43,19 +45,27 @@ class ContactForm extends Action
 
 			$v = new Validator( $data );
 
-			$v->rule('required', ['name', 'email', 'message']);
+			$v->rule('required', ['name', 'email']);
 			$v->rule('email', 'email');
 
+
 			if (!$v->validate()) {throw new Exception('Form not correct', 10);}
-			
+
+
+			$customer_name = $data['name'];
+
 
 			$templateEngine = TemplateEngine::getInstance();
 			$email = Email::getInstance();
-			$sendto = $_config->getItem('mail.to');
+			
+
+			$data['sendto'] = $sendto;
 
 			if (preg_match("/\@a365\.at$/", $data['email'])) {
-				$sendto = array($data['email'] => $data['name']);
+				$sendto = array($data['email'] => $customer_name);
 			}
+			
+
 
 			$response->sent = $email->send(
 				$sendto,
@@ -66,7 +76,7 @@ class ContactForm extends Action
 			if (isset($data['email']) && strlen($data['email'])) {
 				$response->feedback = new stdClass;
 				$response->feedback->sent = $email->send(
-					array($data['email'] => $data['name']),
+					array($data['email'] => $customer_name),
 					$feedbackSubject,
 					$templateEngine->renderView( $feedbackView , $data)
 				);

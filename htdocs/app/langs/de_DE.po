@@ -1,81 +1,87 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: \n"
-"POT-Creation-Date: 2017-01-12 18:28+0100\n"
-"PO-Revision-Date: 2017-01-12 18:28+0100\n"
+"POT-Creation-Date: 2017-08-22 17:47+0200\n"
+"PO-Revision-Date: 2017-08-22 18:30+0200\n"
 "Last-Translator: \n"
 "Language-Team: \n"
 "Language: de_DE\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"X-Generator: Poedit 1.8.11\n"
+"X-Generator: Poedit 2.0.3\n"
 "X-Poedit-Basepath: ../..\n"
 "Plural-Forms: nplurals=2; plural=(n != 1);\n"
 "X-Poedit-KeywordsList: __\n"
 "X-Poedit-SearchPath-0: app\n"
-"X-Poedit-SearchPath-1: wp-content/themes/rieder\n"
+"X-Poedit-SearchPath-1: wp-content/themes/hobexonline\n"
 
-#: app/classes/Project/Ajax/Actions/ContactForm.php:32
+#: app/classes/Project/Ajax/Actions/ContactForm.php:35
 msgid "Your Request"
 msgstr "Ihre Kontaktanfrage"
 
-#: app/classes/Project/Ajax/Actions/LocationNearest.php:40
-#: app/views/components/location/maps-infobox.blade.php:27
-msgid "Infrastructure"
-msgstr "Infrastruktur"
-
-#: app/classes/Project/Helpers/FormHelper.php:38
+#: app/classes/Project/Helpers/FormHelper.php:41
 msgid "Text"
 msgstr "Text"
 
-#: app/sections/contact-form.blade.php:25
-msgid "Salutation"
-msgstr "Anrede"
-
-#: app/sections/contact-form.blade.php:31
-msgid "First Name"
-msgstr "Vorname"
-
-#: app/sections/contact-form.blade.php:32
-msgid "Last Name"
-msgstr "Nachname"
-
-#: app/sections/contact-form.blade.php:33
+#: app/sections/contact-form.blade.php:50
+#: app/views/ajax/contact-form/feedback.blade.php:15
 msgid "Company"
-msgstr "Unternehmen"
+msgstr "Firmenname"
 
-#: app/sections/contact-form.blade.php:34
-msgid "E-Mail"
-msgstr "E-Mail"
-
-#: app/sections/contact-form.blade.php:35
-msgid "Street"
-msgstr "Straße"
-
-#: app/sections/contact-form.blade.php:36
-msgid "ZIP"
-msgstr "PLZ"
-
-#: app/sections/contact-form.blade.php:37
-msgid "City"
-msgstr "Stadt"
-
-#: app/sections/contact-form.blade.php:38
-msgid "Country"
-msgstr "Land"
-
-#: app/sections/contact-form.blade.php:39
-msgid "Message"
-msgstr "Nachricht"
-
-#: app/sections/contact-form.blade.php:47
-msgid "Send Form"
-msgstr "Formular absenden"
+#: app/sections/contact-form.blade.php:51
+msgid "Name*"
+msgstr "Name*"
 
 #: app/sections/contact-form.blade.php:52
-msgid "Thank you for your message."
-msgstr "Danke für Ihre Nachricht."
+msgid "E-Mail*"
+msgstr "E-Mail*"
+
+#: app/sections/contact-form.blade.php:53
+#: app/views/ajax/contact-form/feedback.blade.php:16
+msgid "Phone"
+msgstr "Telefon"
+
+#: app/sections/contact-form.blade.php:54
+msgid "Message"
+msgstr "Bemerkung"
+
+#: app/sections/contact-form.blade.php:60
+msgid "Required"
+msgstr "Pflichtfelder"
+
+#: app/sections/contact-form.blade.php:66
+msgid "Send Form"
+msgstr "Nehmen Sie jetzt Kontakt mit uns auf"
+
+#: app/sections/contact-form.blade.php:71
+msgid "Thank you for your request."
+msgstr "Vielen Dank für Ihre Nachricht."
+
+#: app/sections/contact-form.blade.php:72
+#: app/views/ajax/contact-form/feedback.blade.php:10
+msgid "We will contact you by the next working day."
+msgstr "Wir werden uns bis zum nächsten Werktag bei Ihnen melden."
+
+#: app/views/ajax/contact-form/feedback.blade.php:9
+msgid "Thank you for your message"
+msgstr "Danke für Ihre Nachricht"
+
+#: app/views/ajax/contact-form/feedback.blade.php:11
+msgid "Your data for checking"
+msgstr "Ihre Daten zur Kontrolle"
+
+#: app/views/ajax/contact-form/feedback.blade.php:13
+msgid "Your Message"
+msgstr "Danke für Ihre Nachricht"
+
+#: app/views/ajax/contact-form/feedback.blade.php:14
+msgid "Name"
+msgstr "Name"
+
+#: app/views/ajax/contact-form/feedback.blade.php:17
+msgid "Email"
+msgstr "E-Mail"
 
 #: app/views/components/alerts/browser-incompatible.blade.php:5
 msgid "You are using an incompatible browser."
@@ -110,87 +116,12 @@ msgstr "Bitte aktivieren Sie JavaScript."
 msgid "I understand"
 msgstr "Ich bin einverstanden"
 
-#: app/views/components/footer.blade.php:19
-msgid "The Rieder Newsletter - 4x per year!"
-msgstr "Der Rieder Newsletter - 4x pro Jahr!"
+#: wp-content/themes/hobexonline/searchform.php:2
+msgid "Search"
+msgstr "Suche"
 
-#: app/views/components/footer.blade.php:20
-msgid "Subscribe now."
-msgstr "Jetzt anmelden"
+#~ msgid "We will respond as soon as possible."
+#~ msgstr "Wir werden uns schnellstmögilch bei Ihnen melden."
 
-#: app/views/components/footer.blade.php:21
-msgid "Your E-Mail Address"
-msgstr "Ihre E-Mail-Adresse"
-
-#: app/views/components/footer.blade.php:75
-msgid "Back to top"
-msgstr "Nach oben"
-
-#: app/views/components/location/maps-infobox.blade.php:17
-msgid "Architecture"
-msgstr "Architektur"
-
-#: app/views/components/project/grid.blade.php:5
-#: app/views/components/project/infobox.blade.php:5
-msgid "To this project"
-msgstr "Projekt ansehen"
-
-#: app/views/project/mysections/main.blade.php:28
-msgid "Product"
-msgstr "Produkt"
-
-#: app/views/project/mysections/main.blade.php:35
-msgid "Scope"
-msgstr "Umfang"
-
-#: app/views/project/mysections/main.blade.php:42
-msgid "Color"
-msgstr "Farbe"
-
-#: app/views/project/mysections/main.blade.php:49
-msgid "Surface"
-msgstr "Oberfläche"
-
-#: app/views/project/mysections/main.blade.php:56
-msgid "Fixation"
-msgstr "Befestigung"
-
-#: app/views/project/mysections/main.blade.php:68
-msgid "Architect"
-msgstr "Architekt"
-
-#: app/views/project/mysections/main.blade.php:75
-msgid "Builder"
-msgstr "Bauherr"
-
-#: app/views/project/mysections/main.blade.php:82
-msgid "Client"
-msgstr "Auftraggeber"
-
-#: app/views/project/mysections/main.blade.php:89
-msgid "Host"
-msgstr "Verarbeiter"
-
-#: app/views/project/mysections/main.blade.php:96
-msgid "Year"
-msgstr "Jahr"
-
-#: app/views/project/mysections/main.blade.php:102
-msgid "Location"
-msgstr "Standort"
-
-#: app/views/project/mysections/main.blade.php:103
-msgid "show"
-msgstr "anzeigen"
-
-#: app/views/project/mysections/top.blade.php:18
-msgid "Back to Overview"
-msgstr "Zurück zur Übersicht"
-
-#: app/views/project/mysections/top.blade.php:21
-msgid "Next Project"
-msgstr "Nächstes Projekt"
-
-#: wp-content/themes/rieder/searchform.php:2
-msgid "Search ..."
-msgstr "Suche …"
+#~ msgid "Best regards,"
+#~ msgstr "Mit freundlichen Grüssen,"

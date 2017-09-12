@@ -1,0 +1,31 @@
+    $block: '.contact';
+    #{$block} {
+        color: $color-white;
+        text-align: center;
+        &__text {
+            padding-top: em(10);
+        }
+        &__iconboxes {
+            margin: 0 auto;
+            border-spacing: 3em 0;
+            border-collapse: separate;
+            margin-bottom: 2em;
+
+            &__box {
+                &__text {
+                    padding-top: 0;
+                }
+            }
+        }
+        i {
+            font-size: 3em;
+        }
+        @include mq($from: screen-sm) {
+            &__iconboxes {
+                display: table;
+                &__box {
+                    display: table-cell;
+                }
+            }
+        }
+    }

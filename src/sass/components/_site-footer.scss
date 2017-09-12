@@ -1,0 +1,58 @@
+$block: '.site-footer';
+#{$block} {
+    &__table {
+        position: relative;
+        width: 100%;
+        margin-top: 0.75em;
+        margin-bottom: 2.75em;
+    }
+    &__nav {
+
+        vertical-align: bottom;
+        font-size: 1.2em;
+
+    }
+    &__logo {
+        width: 100%;
+        margin-top: 1em;
+        max-width: 32em;
+        display: none;
+    }
+    &__mobile {
+        width: 100%;
+        max-width: 32em;
+        margin: 0 auto;
+        margin-top: 1em;
+    }
+    @include mq($from: screen-sm) {
+        text-align: center;
+        &__table {
+            margin-top: 2em;
+        }
+        ul li {
+            display: inline;
+            padding-left: .5em;
+        }
+        &__logo {
+            margin: 1em auto;
+            display: inline;
+        }
+        &__mobile {
+            display: none;
+        }
+    }
+    @include mq($from: $screen-lg + 150) {
+        text-align: left;
+        &__table {
+            display: table;
+        }
+        &__nav {
+            display: table-cell;
+        }
+        &__logo {
+            position: absolute;
+            right: 0;
+            margin: 0;
+        }
+    }
+}

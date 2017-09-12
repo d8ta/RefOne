@@ -7,6 +7,7 @@ if (is_readable($css)) {
 ?>
 <head>
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+    <meta http-equiv="X-UA-Compatible" content="IE=Edge">
     <meta charset="<?php bloginfo( 'charset' ); ?>">
     <meta name="format-detection" content="telephone=no">
 

@@ -19,3 +19,13 @@ b {
 p {
     margin-bottom: 0.8em;
 }
+
+a:hover {
+    color: $brand-primary;
+}
+
+
+
+.hidden {
+    display: none;
+}

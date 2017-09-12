@@ -1,0 +1,41 @@
+$block: '.intro';
+#{$block} {
+    margin-top: 3.5rem;
+    margin-bottom: rem(60);
+    text-align: center;
+    a {
+        display: block;
+        max-width: 23em;
+        margin: 0 auto;
+        margin-top: 1.2em;
+    }
+    &__text {
+        margin: 0 auto;
+        padding-top: 1.5em;
+        max-width: $width-max-container-text;
+        p {
+            margin-bottom: 1em;
+        }
+    }
+    &__logos {
+        width: 100%;
+        max-width: 32em;
+        display: none;
+    }
+    &__mobilelogos {
+        width: 100%;
+        max-width: 32em;
+    }
+    @include mq($from: screen-sm) {
+        &__logos {
+            display: inline;
+        }
+        &__mobilelogos {
+            display: none;
+        }
+    }
+}
+
+.hidden {
+    display: none;
+}

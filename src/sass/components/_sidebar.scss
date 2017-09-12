@@ -1,0 +1,83 @@
+$block: '.sidebar';
+$sidebar-bg: $color-white;
+$sidebar-fg: $hobexDark;
+#{$block} {
+    text-align: left;
+    position: fixed;
+    width: 100%;
+    min-height: 100vh;
+    right: 0;
+    z-index: 0;
+    background: $brand-primary;
+    nav {
+        margin-top: -.7em;
+        margin-bottom: -2.4em;
+        ul {
+            li {
+                font-size: 1.3em;
+                background: $nav-grey;
+    padding: 0.3em 0 .3em 6em;
+    margin-right: -6em;
+    margin-left: -6em;
+                &:hover {
+                    background: $color-white;
+                }
+            }
+        }
+    }
+    @include mq($from: screen-xs) {
+        // padding-left: 30%;
+    }
+    @include mq($from: screen-sm) {
+        // padding-left: 50%;
+    }
+    &,
+    &__content {
+        background: $nav-grey;
+        color: $sidebar-fg;
+    }
+    &__content {
+        opacity: 0;
+        transition: opacity .3s .6s;
+        margin: 0 auto;
+        padding: $height-header $side-padding em(40);
+        box-sizing: content-box;
+        @include clearfix;
+        body.sidebar-open & {
+            opacity: 1;
+            transition: opacity .3s 0s;
+        }
+    }
+    &__lang-switch {
+        margin-top: 2.5em;
+        margin-left: -1.5em;
+        padding-left: $side-padding;
+    }
+    &__page-overlay {
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        z-index: 1000;
+        background: $brand-primary;
+        top: 0;
+        left: 0;
+        visibility: hidden;
+        opacity: 0;
+        transition: (opacity .3s .1s, visibility 0s .4s);
+        body.sidebar-open & {
+            @include mq($until: width-mobile-menu) {
+                visibility: visible;
+                opacity: 1;
+                transition: (opacity .3s, visibility 0s);
+            }
+        }
+    }
+    body.sidebar-open & {
+        position: relative;
+        width: auto;
+        background: $color-white;
+    }
+    @include mq($from: width-mobile-menu) {
+        display: none;
+    }
+}

@@ -1,15 +1,13 @@
 <div class="section__content">
     <div class="site-navigation__toggler">
-    	<div class="site-navigation__toggler__item js-site-navigation-toggler">
-    		Menu
-    	</div>
-    	
+    	<div class="site-navigation__toggler__item js-site-navigation-toggler"></div>
+
     </div>
 	<nav class="site-navigation__nav navigation navigation--main">
 		<ul class="navigation__list navigation__list--level-{!!$level!!}">
 		    @foreach($items as $item)
 		        <?php
-		        	$class = (isset($page) && 
+		        	$class = (isset($page) &&
 		        		($item->object_id == $page->getId() ||
 		        		(wp_get_post_parent_id($item->object_id) == wp_get_post_parent_id($page->getId()))
 		        		)) ? 'active' : '';
@@ -23,7 +21,7 @@
 		        	@else
 		       		<a href="{!!$item->url!!}">{{$item->title}}</a>
 		       		@endif
-		            
+
 		        </li>
 		    @endforeach
 		</ul>

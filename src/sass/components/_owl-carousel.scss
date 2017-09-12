@@ -1,0 +1,71 @@
+.owl-dots {
+    padding: 5.5em 0 1.25em;
+    text-align: center;
+    background-color: $hobexDark;
+    @include mq($until: screen-sm) {
+        padding: 7em 0 1.25em;
+    }
+}
+
+.owl-dot {
+    display: inline-block;
+    font-size: em(18);
+    width: 1em;
+    height: 1em;
+    margin: 0 em(4);
+    transition: background .2s;
+    background-color: $hobexDarkGrey;
+    &.active,
+    &:hover {
+        background-color: $color-white;
+    }
+}
+
+.owl-nav {
+    padding: 0;
+    text-align: center;
+    height: 100%;
+    margin-top: -6em;
+}
+
+.owl-prev,
+.owl-next {
+    display: inline;
+    color: $color-white;
+    .icon {
+        font-size: em(32);
+        color: $color-white;
+        transition: all .2s;
+        &::before {
+            @extend %icon;
+        }
+    }
+    @include mq($until: screen-sm) {
+        display: none;
+    }
+}
+
+.owl-prev {
+    padding-right: 40em;
+    position: absolute;
+    .icon {
+        @include icon(arrow-left);
+    }
+    &:hover {
+        .icon {
+            transform: translateX(-.3em);
+        }
+    }
+}
+
+.owl-next {
+    padding-left: 40em;
+    .icon {
+        @include icon(arrow-right);
+    }
+    &:hover {
+        .icon {
+            transform: translateX(.3em);
+        }
+    }
+}

@@ -3,8 +3,20 @@
     @extend %h1 !optional;
 }
 
+.h1-dark {
+    @extend %h1-dark !optional;
+}
+
+.h1-welcome {
+	@extend %h1-welcome !optional;
+}
+
 .h2 {
     @extend %h2 !optional;
+}
+
+.h2-dark {
+    @extend %h2-dark !optional;
 }
 
 .h3 {
@@ -21,4 +33,40 @@
 
 .h6 {
     @extend %h6 !optional;
+}
+
+.text-base {
+    @extend %text-base !optional;
+}
+
+.faq-headline {
+    @extend %faq-headline !optional;
+}
+
+.faq {
+    @extend %faq !optional;
+}
+
+.contact-label {
+    @extend %contact-label !optional;
+}
+
+.text-base-dark {
+	@extend %text-base-dark !optional;
+}
+
+.headline-box {
+    @extend %headline-box !optional;
+}
+
+.headline-box-alt {
+	@extend %headline-box-alt !optional;
+}
+
+.text-box {
+    @extend %text-box !optional;
+}
+
+.text-box-alt {
+	@extend %text-box-alt !optional;
 }

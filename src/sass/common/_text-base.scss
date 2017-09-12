@@ -17,25 +17,89 @@ h6,
     font-weight: normal;
 }
 
-
 %h1 {
-    
+    font: $font-klavika;
+    line-height: 1.2em;
+    font-weight: bold;
+    text-transform: uppercase;
+    font-size: em(32);
+    text-align: center;
+    color: $color-text;
+    @include mq($from: screen-sm) {
+        font-size: em(40);
+    }
+
+    @include mq($from: screen-md) {
+        font-size: em(48);
+    }
+
+    @include mq($from: screen-lg) {
+        font-size: em(54);
+    }
+
+    @include mq($from: screen-xl) {
+        font-size: em(60);
+    }
 }
 
+%h1-dark {
+    @extend %h1;
+    color: $color-white;
+}
+
+%h1-welcome {
+    @extend %h1;
+    font-weight: normal;
+    display: none;
+    @include mq($from: screen-sm) {
+        font-size: em(28);
+        display: inline;
+    }
+    @include mq($from: screen-md) {
+        font-size: em(32);
+        display: inline;
+    }
+    @include mq($from: screen-lg) {
+        font-size: em(38);
+    }
+    @include mq($from: $screen-lg + 200px) {
+        font-size: em(46);
+    }
+    @include mq($from: screen-xxl) {
+        font-size: em(48);
+    }
+}
+
+
 %h2 {
-    
+    font-family: $font-headline;
+    font-style: italic;
+    text-transform: none;
+    font-size: .85em;
+    color: $color-text;
+}
+
+%h2-dark {
+    @extend %h2;
+    color: $color-white;
 }
 
 %h3 {
-    
+    font: $font-klavika;
+    line-height: 1.2em;
+    font-weight: normal;
+    font-size: em(22);
+    color: $color-text;
 }
 
 %h4 {
-    
+    @extend %text-base-dark;
+    font-size: 1.6em;
+    font-weight: bold;
 }
 
 %h5 {
-   font-size: 1;
+    font-size: 1;
 }
 
 %h6 {
@@ -44,6 +108,76 @@ h6,
 
 %text-base {
     font-family: $font-normal;
-    line-height: 1.65;
+    line-height: 1.4;
+    font-size: em(16);
+    font-weight: bold;
+    color: $color-text;
+    @include mq($from: screen-sm) {
+        font-size: em(18);
+    }
+
+    @include mq($from: screen-md) {
+        font-size: em(20);
+    }
+
+    @include mq($from: screen-lg) {
+        font-size: em(22);
+    }
+
+    @include mq($from: screen-xl) {
+        font-size: em(24);
+    }
+}
+
+%text-base-dark {
+    @extend %text-base;
+    color: $color-white;
+}
+
+%contact-label {
+    @extend %text-base;
+    font-size: 1.125em;
+    color: $color-white;
+}
+
+%headline-box {
+    @extend %text-base;
+    color: $brand-primary;
+    font-weight: bold;
+    text-transform: uppercase;
+    max-width: 7.5em;
+    margin: 0 auto;
+    text-align: center;
+}
+
+%headline-box-alt {
+    @extend %headline-box;
+    font-size: em(30);
+    color: $color-text;
+    max-width: 6.9em;
+}
+
+%text-box {
+    @extend %text-base;
     font-size: em(18);
+    font-weight: normal;
+    margin: 0 auto;
+    max-width: 15.6em;
+}
+
+%faq-headline {
+    @extend %h3;
+    font-size: 1.15em;
+    font-weight: bold;
+}
+
+%faq {
+    @extend %text-box;
+    max-width: none;
+}
+
+%text-box-alt {
+    @extend %text-box;
+    font-size: em(24);
+    font-weight: bold;
 }

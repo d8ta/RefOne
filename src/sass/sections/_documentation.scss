@@ -1,0 +1,54 @@
+$block: '.documentation';
+$documentation-margin: em(40);
+#{$block} {
+    &__inner {
+        width: 100%;
+        margin: 0 auto 2em auto;
+        max-width: 76em;
+    }
+    &__headline,
+    &__text {
+        color: $color-white;
+    }
+    &__button {
+        position: absolute;
+        bottom: 3.75em;
+        width: 100%;
+        text-align: center;
+        left: 0;
+    }
+    &__box {
+        padding-bottom: 8.25em;
+        margin-bottom: 2em;
+        vertical-align: top;
+        background: $box-grey;
+        position: relative;
+        &__inner {
+            padding: .5em;
+            padding-top: 3.5em;
+        }
+    }
+    &__text {
+        max-width: 18em;
+        padding-top: .5em;
+        padding-left: 1em;
+        padding-right: 1em;
+        text-align: center;
+        font-weight: normal;
+        p {
+            margin-bottom: 1.8em;
+        }
+    }
+    @include mq($from: $screen-sm) {
+        margin-left: -$documentation-margin;
+        margin-right: -$documentation-margin;
+        &__inner {
+            display: table;
+            border-spacing: $documentation-margin 0;
+            border-collapse: separate;
+        }
+        &__box {
+            display: table-cell;
+        }
+    }
+}
